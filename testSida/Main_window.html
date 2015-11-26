@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-2.1.4.js"></script>
+    <!--<script src="CoffeeWriting.js"></script>-->
+    <title>main window</title>
+</head>
+<body>
+<div id="wrapper">
+<div class="top_panel" id="logo_panel">
+    <h1>Bar</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Stuff</a>
+                <ul>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Lists</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Lists</a>
+                <ul>
+                    <li><a href="#">Stuff</a></li>
+                    <li><a href="#">Stuff</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Things</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="window_panel" id="Wpanel1">
+    <div id="descr_panel">
+    <p id="description">Beer x 1</p>
+    </div>
+</div>
+<div class="window_panel" id="calc_panel">
+<p id="calculations">
+   1+1 = 2
+</p>
+</div>
+<div class="window_panel" id="button_panel">
+    <div class="button_class" id="1">Beer</div>
+    <div class="button_class" id="2">Whine</div>
+    <div class="button_class" id="3">Spirit</div>
+    <div class="button_class" id="4">Stuff</div>
+    <div class="button_class" id="4">Shuff</div>
+</div>
+   </div>
+<script>$(document).ready(function(){
+
+    $(document).on('click', function() {
+        var temp = $(this).text();
+        $(temp+"\n").appendTo("#calculations");
+    });
+});</script>
+</body>
+</html>
