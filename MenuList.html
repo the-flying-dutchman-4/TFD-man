@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <htl>
 <head>
-	<title></title>
+	<title>Menu List</title>
+	<style type="text/css">
+	.cart{
+			position:fixed;
+			right:0;
+			top:1;
+			width:350px;
+			height:100%;
+			/*background:#ccc;*/
+			padding:0px 10px;
+		}
+
+	</style>
 </head>
 <body>
-	<div id="container">  <!-- style="width:500px" -->
+	<div id="container">  
 
 	<div id="header" style="background-color:lightblue;" align="center">
 	<h1 style="margin-bottom:0; align="center" ">The Flying Dutchman</h1></div>
@@ -21,37 +33,78 @@
 		</form>
 	</div>
 
-	<div id="content" >  <!-- height:200px;width:800px;float:left; style="background-color:#EEEEEE;"-->
-	<!-- <b >Content goes here<b/>-->
+	<div id="content" > 
+		<ul style="list-style-type:square; float:left; line-height:50px; font-size:2em" id="list">
+		<li>beer1
+		<button onclick="addProduct(1, 5)">Add to cart</button>
+		</li>
 
-		<ul style="list-style-type:square; float:left; line-height:50px; font-size:2em">
-		<li>Beer 1	
-		<input  type="button" value="-"> 
-		<input type="text" name="number" value="0"> 
-		<input  type="button" value="+">
+		<li>beer2
+		<button onclick="addProduct(2, 5)">Add to cart</button>
 		</li>
-		<li>Beer 2
-		<input  type="button" value="-"> 
-		<input type="text" name="number" value="0"> 
-		<input  type="button" value="+">
+
+		<li>beer3
+		<button onclick="addProduct(3, 5)">Add to cart</button>
 		</li>
-		<li>Beer 3
-		<input  type="button" value="-"> 
-		<input type="text" name="number" value="0"> 
-		<input  type="button" value="+">
+
+		<li>beer4
+		<button onclick="addProduct(4, 5)">Add to cart</button>
 		</li>
-		<li>Beer 4
-		<input  type="button" value="-"> 
-		<input type="text" name="number" value="0"> 
-		<input  type="button" value="+">
-		</li>
-		<li>Beer 5
-		<input  type="button" value="-"> 
-		<input type="text" name="number" value="0"> 
-		<input  type="button" value="+">
+
+		<li>beer5
+		<button onclick="addProduct(5, 5)">Add to cart</button>
 		</li>
 		</ul>
 	</div>
+
+		<div class="cart">
+		<h1>Shopping Cart</h1>
+		<table id="cartcontent" style="width:300px;height:auto;" border="1">
+			<thead>
+				<tr>
+					<th field="name" width=140>Name</th>
+					<th field="quantity" width=60 align="right">Quantity</th>
+					<th field="price" width=60 align="right">Price</th>
+				</tr>
+				
+			<script type="text/javascript">
+			var n=1;
+			var arr = new Array(0);
+			function addProduct(name, price)
+		          {	
+		          		var flag = 0;
+		          		for( var i = 0; i<arr.length;i++ )
+		          		{
+		          			if (name == arr[i]) flag=1;
+		          		}
+		          		if(flag == 1)
+		          		{}
+		          		else
+		          		{
+					var tr=document.getElementById("cartcontent").insertRow(1);
+					//insertRow's parameter is the row number in which new item will be inserted
+					var data=new Array();//
+					data[0]=document.createTextNode("beer"+name);
+					data[1]=document.createTextNode(price);
+					data[2]=document.createTextNode(n);
+					for(i=0;i<data.length;i++)
+					{//
+						td=tr.insertCell(i);//insertCell 's parameter is the column number
+						td.appendChild(data[i]);//
+					}
+					n++;
+					arr.push(name);
+				}
+            		}
+			</script>
+			</thead>
+
+		</table>
+		<p class="total" align="right">Total: $0</p>
+		<!-- <h2>Drop here to add to cart</h2> -->
+	</div>
+	<!-- </div> -->
+
 
 	</div>
 
