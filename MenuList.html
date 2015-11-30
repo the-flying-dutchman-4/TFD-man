@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<htl>
+<html>
 <head>
 	<title>Menu List</title>
+	<link rel="stylesheet" href="MenuListCSS.css">
+	z
 	<style type="text/css">
 	.cart{
 			position:fixed;
@@ -12,6 +14,16 @@
 			padding:0px 10px;
 		}
 
+	.buy {
+		display: block;
+		height: 50px;
+		width: 300px;
+		background: greenyellow;
+
+		color: black;
+		text-align: center;
+		font: bold 2.2em/10px Helvetica Neue, Arial, "Helvetica", Geneva, sans-serif;
+	}
 	</style>
 </head>
 <body>
@@ -61,7 +73,10 @@
 		</ul>
 	</div>
 
+
 		<div class="cart">
+			<h2 >User:</h2>
+			<h2 >Credits Left:</h2>
 		<h1>Shopping Cart</h1>
 		<table id="cartcontent" style="width:300px;height:auto;" border="1">
 			<thead>
@@ -150,11 +165,18 @@
 			    
 
 			}
+
 			</script>
 			</thead>
 
+
+
+
 		</table>
 		<p id="totalPrice" class="total" >Total: $0</p>
+
+			<button class = "buy" onclick="buy">Buy</button>
+
 
 	</div>
 	<!-- </div> -->
