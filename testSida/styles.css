@@ -25,6 +25,21 @@ h1{
 #button_panel{
     height: 100px;
 }
+
+#dbTable{
+    border-radius:9px;
+    border:1px solid #84bbf3;
+    height: 400px;
+    width:60%;
+    float:left;
+    overflow: scroll;
+}
+#dbButton{
+    float:right
+}
+#dbButton2{
+    float:right
+}
 #wrapper{
     margin-left:auto;
     margin-right:auto;
