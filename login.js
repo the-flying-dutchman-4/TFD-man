@@ -1,7 +1,7 @@
 "use strict"
 $(document).ready(function(){
     var textDisp = $('#display');
-    var admins = [2,24,17,20,25]
+    var admins = [2,24,17,20,25];
     $('#submitButton').click(function(){
         var username= $('#user').val();
         var pwd = $('#pw').val();
@@ -12,18 +12,26 @@ $(document).ready(function(){
             dataType: "json",
             async: true,
             success: function(result){
-                console.log(result.payload[0].assets)
-                    textDisp.append("|name: "+result.payload[0].first_name + " last name: "+ result.payload[0].last_name)
-                    console.log(result)
-
-                    var temp = $.inArray(result.payload[0].first_name,admins)
+                if(result.type != "error"){
+                    console.log("hej")
+                    console.log(result.payload[0].assets)
+                    textDisp.append("|name: " + result.payload[0].first_name + " last name: " + result.payload[0].last_name)
+                    console.log(result.payload[0].user_id)
+                    console.log(admins)
+                    var temp = parseInt(result.payload[0].user_id, 10)
                     console.log(temp)
-                    //if(result.payload[0].first_name.inArray(admins) > -1) {
+                    var temp2 = $.inArray(temp, admins)
+                    console.log(temp2)
+                    //if (temp2 > -1) {
                     //    $(location).attr('href', 'MenuList.html')
                     //}
-                    //else{
+                    //else {
                     //    $(location).attr('href', 'CustomerMain.html')
                     //}
+                }
+                else{
+                    console.log("error");
+                }
             },
             error: function(){
                 alert('error loading')
