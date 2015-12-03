@@ -3,35 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/Login.css">
-    <script src ="jquery-2.1.4.js"></script>
-    <script src="../login.js"></script>
+    <script src ="../javascript/jquery-2.1.4.js"></script>
+    <script src="../javascript/login.js"></script>
     <title>Login</title>
 </head>
 
 <body>
     <div class="container">
         <div id="header">
+            <!--<img src="../pictures/pirate_ship.jpg"> hitta en bild med rätt mått och få funka-->
             <p id="name">The Flying Dutchman Uppsala</p>
         </div>
-        <div class="one">
+        <div class="login-wrapper">
             <form id="login_form" action ="#">
-                <h2>Login</h2>
-                <label> <span>Username: </span>
-                    <input type="text" id="user" placeholder="Enter username" required = "required" autofocus ="autofocus">
-                </label>
-                <br>
-                <label><span>Password: </span>
-                    <input type="password" id="pw" placeholder="Enter password" required = "required">
-                </label>
-                <div id="submit_button_align">
-                    <button type ="submit" class = "button_class" id="submitButton">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-
-
+                <fieldset>
+                    <input type="text" id="user" placeholder="username" required = "required" autofocus ="autofocus">
+                    <input type="password" id="pw" placeholder="password" required = "required">
+                    <button type ="submit" class = "button_class" id="submitButton">log in</button>
+                </fieldset>
     <div id="display">
     </div>
 </body>
