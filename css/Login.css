@@ -1,0 +1,59 @@
+body {
+    background-image: url("http://ltlfreightshop.com/blog/wp-content/uploads/2012/05/beer.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    border-radius: 10px;
+}
+
+.container {
+    z-index: 1;
+    margin: 0 auto 0 auto;
+    width: 1000px;
+    height: 735px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: dashed;*/
+}
+
+#header {
+    /*float: initial;*/
+    height: 150px;
+    width: 100%;
+    display: inline-block;
+    background-color: #668284;
+    margin-bottom: 10px;
+}
+
+#name {
+    text-align: center;
+    margin-left: 5px;
+    padding-top: 5px;
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    color: #ffffff;
+}
+
+h4 {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-family: Verdana, sans-serif;
+}
+
+.one {
+    display: inline-block;
+    background-color: #F4EBC3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 32%;
+    height: 30%;
+    table-layout: fixed;
+    overflow: auto;
+    border-radius: 50px;
+}
