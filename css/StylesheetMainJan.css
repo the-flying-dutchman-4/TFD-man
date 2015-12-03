@@ -142,3 +142,18 @@ li {
     float: initial;
     padding-top: 15px;
 }
+
+table{
+width: 100%;
+
+}
+#price{
+    white-space: nowrap;
+}
+#count{
+    white-space: nowrap;
+    text-align: right;
+}
+th{
+    font-weight: bold;
+}

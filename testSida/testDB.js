@@ -9,13 +9,16 @@ $(document).ready(function() {
         dataType: "json",
         async: true,
         success: function (result) {
-            for (var i = 2; result.payload.length; i++) {
+            for (var i = 0; result.payload.length; i++) {
+                if (result.payload[i].namn != "" && result.payload[i].count > 0){
+
                 $('#lager').append(
                     '<tr><td class="name">' + result.payload[i].namn +
-                    '</td><td class="price">' + result.payload[i].pub_price +
+                    '</td><td class="price">' + result.payload[i].pub_price + " kr"+
                     '</td><td class="count">' + result.payload[i].count +
-                    '</td><td class ="id">' + result.payload[i].beer_id +
+                    //'</td><td class ="id">' + result.payload[i].beer_id +
                     '</td></tr>')
+                }
             }
         },
         error: function () {

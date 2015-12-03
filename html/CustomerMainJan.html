@@ -3,6 +3,8 @@
     <head>
         <title>The Flying Dutchman</title>
         <link rel="stylesheet" type="text/css" href="../css/StylesheetMainJan.css" />
+        <script src ="../javascript/jquery-2.1.4.js"></script>
+        <script src="../testSida/testDB.js"></script>
     </head>
     <body>
         <div class="container">
@@ -29,10 +31,17 @@
             </div>
             <div class="oneofthree">
                 <h4>Available stock</h4>
-                <ul>
-                    <li>beers</li>
-                    <li>beers</li>
-                </ul>
+                <div class = "db_table" id ="dbTable">
+                    <table style = "width: 100%" id ="lager">
+                        <tbody>
+                        <tr><th>Namn</th>
+                            <th>Pris</th>
+                            <th>I lager</th>
+                            <!--<td>ID</td>-->
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="oneofthree">
                 <h4>Cart</h4>
