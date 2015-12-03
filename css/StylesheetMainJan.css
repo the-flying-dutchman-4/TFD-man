@@ -4,8 +4,12 @@ body {
     background-attachment: fixed;
 }
 
-div {
-    border-radius: 10px;
+
+
+img {
+    border-radius: 500px;
+    -webkit-filter: blur(0.2px) grayscale(0.6) sepia(0.7);
+    filter: sepia(60%);
 }
 
 .container {
@@ -55,12 +59,11 @@ nav ul li a:hover:not(.active) {
 
 
 #header {
-    /*float: initial;*/
     height: 150px;
     width: 100%;
     display: inline-block;
-    background-color: #668284;
-    margin-bottom: 10px;
+    margin-top: 1px;
+    margin-bottom: 5px;
 }
 
 #name {
@@ -77,44 +80,9 @@ h4 {
     margin-bottom: 15px;
     font-family: Verdana, sans-serif;
 }
-/*
-li {
-    list-style-type: square;
-}
-*/
-
-/*a:hover {
-    font-weight: bold;
-}*/
-
-/*.left {
-    position: relative;
-    float: left;
-    margin-top: 50px;
-    width: 33%;
-    height: 400px;
-    background-color: #B9D7D9;
-    margin-bottom: 10px;
-}*/
-
-
-
 
 .oneofthree {
-    /*position: relative;*/
-    /*float: left;
-    margin-top: 11px;
-    width: 33%;
-    max-width:33%;
-    height: 500px;
-    max-height: 500px;
-    background-color: #F4EBC3;
-
-    clear: left;*/
-    /*position: absolute;*/
-    /*left: 0;*/
     display: inline-block;
-    /*float: left;*/
     margin-right: 0.5%;
     margin-left: 0.5%;
     background-color: #F4EBC3;
@@ -131,6 +99,7 @@ li {
     width: 100%;
     background-color: #668284;
     clear: both;
+    margin-bottom: 5px;
     font-family: Verdana, sans-serif;
     font-size: 14px;
     text-align: center;
@@ -157,3 +126,18 @@ width: 100%;
 th{
     font-weight: bold;
 }
+
+/* testning av nav menyn style */
+
+.menu button {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1000px;
+    width: 220px;
+    padding: 1em;
+    border-radius: 1000px;
+    color: white; }
+
+.login-wrapper button:hover {
+    background-color: rgba(142, 203, 146, 0.5); }

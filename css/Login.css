@@ -20,11 +20,17 @@ div {
     /*border: dashed;*/
 }
 
+img {
+    border-radius: 1000px;
+    -webkit-filter: blur(0.2px) grayscale(0.6) sepia(0.7);
+    filter: sepia(60%);
+}
+
 #header {
     height: 150px;
     width: 100%;
     display: inline-block;
-    background-color: #668284;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
