@@ -7,7 +7,7 @@ body {
 
 
 img {
-    border-radius: 500px;
+    border-radius: 30px;
     -webkit-filter: blur(0.2px) grayscale(0.6) sepia(0.7);
     filter: sepia(60%);
 }
@@ -28,11 +28,13 @@ img {
 /* från school */
 
 nav ul {
+    border-radius: 10px;
+    font-weight: bold;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 20;
     overflow: hidden;
-    background-color: #333;
+    background-color: #e3e3e3;
 }
 
 nav ul li {
@@ -41,18 +43,19 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    color: white;
+    font-family: Papyrus, fantasy;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav ul li a:hover:not(.active) {
-    background-color: #111;
+    background-color: rgba(142, 203, 146, 0.5);
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: rgba(142, 203, 146, 0.5);
 }
 
 /* slut styling menu bar */
@@ -82,10 +85,14 @@ h4 {
 }
 
 .oneofthree {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FBBB63;
+    border: none;
+    border-radius: 30px;
+    outline: none;
     display: inline-block;
     margin-right: 0.5%;
     margin-left: 0.5%;
-    background-color: #F4EBC3;
     top: 22%;
     width: 32%;
     height: 60%;

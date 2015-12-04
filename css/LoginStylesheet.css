@@ -21,7 +21,7 @@ div {
 }
 
 img {
-    border-radius: 1000px;
+    border-radius: 30px;
     -webkit-filter: blur(0.2px) grayscale(0.6) sepia(0.7);
     filter: sepia(60%);
 }
@@ -96,4 +96,3 @@ img {
     border-bottom: 1px solid #252525;
     box-sizing: border-box;
     padding-bottom: 0px; }
-}
