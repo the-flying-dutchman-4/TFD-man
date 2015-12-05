@@ -238,19 +238,19 @@
 
     <translation id="a[name='user']">
         <english>
-            User
+            User:
         </english>
         <swedish>
-            Användare
+            Användare:
         </swedish>
     </translation>
 
     <translation id="a[name='credits left']">
         <english>
-            Credits
+            Credits:
         </english>
         <swedish>
-            Kredit
+            Kredit:
         </swedish>
     </translation>
 
@@ -266,10 +266,10 @@
 
     <translation id="a[name='total price']">
         <english>
-            Total Price
+            Total Price:
         </english>
         <swedish>
-            Totalpris
+            Totalpris:
         </swedish>
     </translation>
 
@@ -290,4 +290,32 @@
             Visar aktiv användares kredit
         </swedish>
     </translation>
+
+    <translation id="a[name='Quick Order']">
+        <english>
+            Quick order of Popular Beers
+        </english>
+        <swedish>
+            Snabb beställning av populära öler
+        </swedish>
+    </translation>
+
+    <translation id="a[name='price']">
+        <english>
+            Price
+        </english>
+        <swedish>
+            Pris
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Quantity']">
+        <english>
+            Quantity
+        </english>
+        <swedish>
+            Antal
+        </swedish>
+    </translation>
+
 </translations>
