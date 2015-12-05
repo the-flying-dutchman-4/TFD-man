@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Flying Dutchman</title>
+        <link rel="stylesheet" type="text/css" href="../css/StylesheetJan.css" />
+        <script src ="../javascript/jquery-2.1.4.js"></script>
+        <script src="../testSida/testDB.js"></script>
+        <script src = "../javascript/Cart.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <img src="../pictures/header.jpg">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <input type ="text" name="Search" placeholder="Search">
+                    <ul style="float:right;list-style-type:none;">
+                        <li><a href="#logout">Log out</a></li>
+                    </ul>
+                </ul>
+            </nav>
+            <div class="oneofthree">
+                <h4>Allergies</h4>
+                <form >
+                    <input type="checkbox" name="Allergies" value="gluten">Gluten intolerance<br>
+                    <input type="checkbox" name="Allergies" value="lactose">Lactose intolerance<br>
+                    <input type="checkbox" name="Allergies" value="nut">Nut allergy
+                </form>
+            </div>
+            <div class="oneofthree">
+                <h4>Available stock</h4>
+                <div class = "db_table" id ="dbTable">
+                    <table style = "width: 100%" id ="lager" border="1">
+                        <tbody>
+                        <tr>
+                            <th>Namn</th>
+                            <th>+/-</th>
+                            <th>Pris</th>
+                            <th>I lager</th>
+                            <!--<td>ID</td>-->
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="oneofthree">
+                <div class="cart">
+                    <h2 >User:</h2>
+                    <h2 >Credits Left:</h2>
+                    <h1>Shopping Cart</h1>
+                    <table id="cartcontent" style="width:300px;height:auto;" border="1">
+                        <thead>
+                            <tr>
+                                <th field="name" width=140>Name</th>
+                                <th field="quantity" width=60 align="right">Quantity</th>
+                                <th field="price" width=60 align="right">Price</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <p id="totalPrice" class="total" >Total: $0</p>
+                    <button class = "buy" onclick="buy">Buy</button>
+                </div>
+
+
+            </div>
+            <div id="footer">
+                <p>Showing active users credit</p>
+            </div>
+        </div>
+    </body>
+</html>

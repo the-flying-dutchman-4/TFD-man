@@ -1,13 +1,22 @@
 var beerList = new Array(0);
 var total = 0;
+var nameList = new Array(0);
+var priceList = new Array(0);
+var idList = new Array(0);
+var dragList1 = ["Black Tower", "Brooklyn", "Chilcas", "Dr L", "Hoegaarden", "Paulaner"];
+var dragList2 = [35, 25, 50, 85, 20, 25];
 
-function addProduct(name, price) 
+function addProduct(id, price, dragOn) 
 {
 	var flag = 0;
 	var index = 0;
+	var name;
+	// alert(typeof name);
+	// alert(typeof price);
+	// alert(typeof Number(name));
 	for( var i = 0; i<beerList.length;i++ )
 	{
-		if (name == beerList[i]) 
+		if (id == beerList[i]) 
 		{
 		          	flag=1;
 		 	index = i;
@@ -21,7 +30,7 @@ function addProduct(name, price)
 		var numVal1 = Number(numVal);
 		var priceVal1= Number(priceVal);
 		numVal1++;
-		priceVal1=priceVal1+5;
+		priceVal1=priceVal1+price;
 	document.getElementById("cartcontent").rows[beerList.length-index].cells[1].innerHTML = numVal1;
 	document.getElementById("cartcontent").rows[beerList.length-index].cells[2].innerHTML = priceVal1;
 	}
@@ -33,21 +42,36 @@ function addProduct(name, price)
 	    	var cell1 = row.insertCell(0);
 	    	var cell2 = row.insertCell(1);
 	    	var cell3 = row.insertCell(2);
-	    	cell1.innerHTML = "Beer"+name;
+	    	if(dragOn == 0)
+	    	{
+			for( var i = 0; i<idList.length;i++ )
+			{
+				if (id == idList[i]) 
+				{
+				          name = nameList[i];
+				}
+			}
+			cell1.innerHTML = name;
+	    	}
+		else
+		{
+			cell1.innerHTML = id;
+		}
+	 	
 	    	cell2.innerHTML = 1;
 	    	cell3.innerHTML = price;
-	    	beerList.push(name);
+	    	beerList.push(id);
 	}
 				
 	total+=Number(price);
 	document.getElementById("totalPrice").innerHTML="Total: $"+total;
 }
 
-function deleteProduct(name, price) 
+function deleteProduct(id, price) 
 {
 	for( var i = 0; i<beerList.length;i++ )
 	{
-		if (name == beerList[i])
+		if (id == beerList[i])
 		{
 		var numVal = document.getElementById("cartcontent").rows[beerList.length-i].cells[1].innerHTML;
 		var priceVal = document.getElementById("cartcontent").rows[beerList.length-i].cells[2].innerHTML;
@@ -56,7 +80,7 @@ function deleteProduct(name, price)
 			if(numVal1>1)
 			{
 		      		numVal1--;
-		      		priceVal1=priceVal1-5;
+		      		priceVal1=priceVal1-price;
 			document.getElementById("cartcontent").rows[beerList.length-i].cells[1].innerHTML = numVal1;
 		          	document.getElementById("cartcontent").rows[beerList.length-i].cells[2].innerHTML = priceVal1;
 				total-=Number(price);
@@ -90,9 +114,18 @@ function drop(ev)
     ev.preventDefault();
  
     var data = ev.dataTransfer.getData("text");
+    // alert(data);
+    var n = Number(data[4]);
 
-    var name = Number(data[4]);
-    addProduct(name, 5);
+    addProduct(dragList1[n-1], dragList2[n-1], 1);
     // ev.target.appendChild(document.getElementById(data));
  
+}
+
+function makeList(name, price, id )
+{
+	nameList.push(name);
+	priceList.push(price);
+	idList.push(id);
+	// alert(name);
 }

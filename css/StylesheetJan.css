@@ -152,3 +152,15 @@ th{
 
 .login-wrapper button:hover {
     background-color: rgba(142, 203, 146, 0.5); }
+
+.buy 
+    {
+        display: block;
+        height: 50px;
+        width: 300px;
+        background: greenyellow;
+
+        color: black;
+        text-align: center;
+        font: bold 2.2em/10px Helvetica Neue, Arial, "Helvetica", Geneva, sans-serif;
+    }
