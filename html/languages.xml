@@ -190,12 +190,104 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Allergies gluten']">
+    <translation id="a[name='Beer list']">
         <english>
-            Gluten intolerance
+            Comlete Beer List
         </english>
         <swedish>
-            Gluten intolerans
+            Komplett Öllista
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Name of Beer']">
+        <english>
+            Name
+        </english>
+        <swedish>
+            Namn
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Price']">
+        <english>
+            Price
+        </english>
+        <swedish>
+            Pris
+        </swedish>
+    </translation>
+
+    <translation id="a[name='in stock']">
+        <english>
+            In stock
+        </english>
+        <swedish>
+            I lager
+        </swedish>
+    </translation>
+
+
+    <translation id="a[name='in stock']">
+        <english>
+            In stock
+        </english>
+        <swedish>
+            I lager
+        </swedish>
+    </translation>
+
+    <translation id="a[name='user']">
+        <english>
+            User
+        </english>
+        <swedish>
+            Användare
+        </swedish>
+    </translation>
+
+    <translation id="a[name='credits left']">
+        <english>
+            Credits
+        </english>
+        <swedish>
+            Kredit
+        </swedish>
+    </translation>
+
+
+    <translation id="a[name='shopping cart']">
+        <english>
+            Shopping Cart
+        </english>
+        <swedish>
+            Kundvagn
+        </swedish>
+    </translation>
+
+    <translation id="a[name='total price']">
+        <english>
+            Total Price
+        </english>
+        <swedish>
+            Totalpris
+        </swedish>
+    </translation>
+
+    <translation id="a[name='buy']">
+        <english>
+            Buy
+        </english>
+        <swedish>
+            Köp
+        </swedish>
+    </translation>
+
+    <translation id="a[name='showing']">
+        <english>
+            Showing active users credit
+        </english>
+        <swedish>
+            Visar aktiv användares kredit
         </swedish>
     </translation>
 </translations>

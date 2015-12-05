@@ -31,15 +31,15 @@
                 </form>
             </div>
             <div class="oneofthree">
-                <h4>Available stock</h4>
+                <h4 name="Beer list" >Complete Beer List</h4>
                 <div class = "db_table" id ="dbTable">
                     <table style = "width: 100%" id ="lager" border="1">
                         <tbody>
                         <tr>
-                            <th>Namn</th>
+                            <th name="Name of Beer">Name</th>
                             <th>+/-</th>
-                            <th>Pris</th>
-                            <th>I lager</th>
+                            <th name="Price">Price</th>
+                            <th name="in stock">in stock</th>
                             <!--<td>ID</td>-->
                         </tr>
                         </tbody>
@@ -48,9 +48,9 @@
             </div>
             <div class="oneofthree">
                 <div class="cart">
-                    <h2 >User:</h2>
-                    <h2 >Credits Left:</h2>
-                    <h1>Shopping Cart</h1>
+                    <h2 name="User" >User:</h2>
+                    <h2 name="credits left" >Credits Left:</h2>
+                    <h1 name="shopping cart" >Shopping Cart</h1>
                     <table id="cartcontent" style="width:300px;height:auto;" border="1">
                         <thead>
                             <tr>
@@ -60,14 +60,14 @@
                             </tr>
                         </thead>
                     </table>
-                    <p id="totalPrice" class="total" >Total: $0</p>
-                    <button class = "buy" onclick="buy">Buy</button>
+                    <p id="totalPrice" class="total" name="total price">Total: $0</p>
+                    <button class = "buy" onclick="buy" name="Buy">Buy</button>
                 </div>
 
 
             </div>
             <div id="footer">
-                <p>Showing active users credit</p>
+                <p name="Showing">Showing active users credit</p>
             </div>
         </div>
     </body>
