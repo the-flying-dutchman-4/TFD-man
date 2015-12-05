@@ -16,7 +16,7 @@ $(document).ready(function() {
                     '<tr><td class="name">' + result.payload[i].namn +
                     '</td><td class="price">' + result.payload[i].pub_price + " kr"+
                     '</td><td class="count">' + result.payload[i].count +
-                    //'</td><td class ="id">' + result.payload[i].beer_id +
+                    '</td><td class ="id" style ="display:none">' + result.payload[i].beer_id +
                     '</td></tr>')
                 }
             }
@@ -31,6 +31,7 @@ $(document).ready(function() {
         id = $(this).children('td.id').html()
         price = $(this).children('td.price').html()
         console.log(id)
+        console.log(price)
     });
 
     $('#dbButton').click(function () {

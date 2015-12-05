@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<translations>
+    <translation id="a[name='home']">
+        <english>
+            Home
+        </english>
+        <swedish>
+            Hem
+        </swedish>
+    </translation>
+
+    <translation id="a[name='news']">
+        <english>
+            News
+        </english>
+        <swedish>
+            Nyheter
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Öl']">
+        <english>
+            Beer
+        </english>
+        <swedish>
+            Öl
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Ljus']">
+        <english>
+            Light lager
+        </english>
+        <swedish>
+            Ljus lager
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Mörk']">
+        <english>
+            Dark lager
+        </english>
+        <swedish>
+            Mörk lager
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Porter']">
+        <english>
+            Porter and Stout
+        </english>
+        <swedish>
+            Porter och Stout
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Special']">
+        <english>
+            Special beer
+        </english>
+        <swedish>
+            Specialöl
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Veteöl']">
+        <english>
+            Wheat beer
+        </english>
+        <swedish>
+            Veteöl
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Vin']">
+        <english>
+            Wine
+        </english>
+        <swedish>
+            Vin
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Rött']">
+        <english>
+            Red wine
+        </english>
+        <swedish>
+            Rött vin
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Vitt']">
+        <english>
+            White wine
+        </english>
+        <swedish>
+            Vitt vin
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Alkoholfritt']">
+        <english>
+            Alcohol free
+        </english>
+        <swedish>
+            Alkoholfritt
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Other']">
+        <english>
+            Other
+        </english>
+        <swedish>
+            Annat
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Dryck']">
+        <english>
+            Beverages
+        </english>
+        <swedish>
+            Dryck
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Stock']">
+        <english>
+            Stock
+        </english>
+        <swedish>
+            Storage
+        </swedish>
+    </translation>
+
+
+    <translation id="a[name='Användare']">
+        <english>
+            Users
+        </english>
+        <swedish>
+            Användare
+        </swedish>
+    </translation>
+
+    <translation id="a[name='logout']">
+        <english>
+            Log out
+        </english>
+        <swedish>
+            Logga ut
+        </swedish>
+    </translation>
+
+
+</translations>

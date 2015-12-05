@@ -5,6 +5,8 @@
         <link rel="stylesheet" type="text/css" href="../css/StylesheetJan.css" />
         <script src ="../javascript/jquery-2.1.4.js"></script>
         <script src="../testSida/testDB.js"></script>
+        <script src="../javascript/translator.js"></script>
+
     </head>
     <body>
         <div class="container">
@@ -13,12 +15,14 @@
             </div>
             <nav>
                 <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <input type ="text" name="Search" placeholder="Search">
+                    <li><a class="active" href="#home" name="home">Home</a></li>
+                    <li><a href="#" name ="news">News</a></li>
+                    <li><a href="#" name="menu">Menu</a></li>
+                    <!--<input type ="text" name="Search" placeholder="Search">-->
                     <ul style="float:right;list-style-type:none;">
-                        <li><a href="#logout">Log out</a></li>
+                        <li><img src="../images/uk.png" width="45" height="45" id="uk" onclick="setLanguage('english')"></li>
+                         <li><img src="../images/se.png" width="45" height="45" id ="swe" onclick= "setLanguage('swedish')"></li>
+                        <li><a href="#" name="logout" style ="margin-left:10px">Log out</a></li>
                     </ul>
                 </ul>
             </nav>
