@@ -170,3 +170,61 @@ th{
         text-align: center;
         font: bold 2.2em/10px Helvetica Neue, Arial, "Helvetica", Geneva, sans-serif;
     }
+.cart
+{
+    position:fixed;
+    right:0;
+    top:120px;
+    width:350px;
+    height:100%;
+    padding:0px 10px;
+}
+#content
+{
+    width: auto;
+}
+#berverages-button
+{
+    font-size: 3em;
+    padding: .3em;
+    margin-bottom: 0.5em;
+}
+#favorites
+{
+    width: 100%;
+    height: 20em;
+}
+#favorites button
+{
+    transition: none;
+    width: 30%;
+    height: 40%;
+    vertical-align: middle;
+}
+#favorites button img
+{
+    height: 90%;
+    border: gray outset 1px;
+    float: left;
+}
+#favorites button .name
+{
+    font-size: 1.5em;
+}
+#favorites button .price
+{
+    float: right;
+}
+
+#beerlist
+{
+    display: inline-block;
+}
+
+.nicer
+{
+    background: white;
+    height: 15% !important;
+    width: 15% !important;
+    font-size: 80% !important;
+}
