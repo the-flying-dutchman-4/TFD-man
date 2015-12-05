@@ -44,7 +44,7 @@
       <file leaf-file-name="CustomerMainJan.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/CustomerMainJan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769">
+            <state vertical-scroll-proportion="-19.384615">
               <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -86,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuListJan.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuListJan.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/MenuListJan.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.384615">
-              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.34336677">
+              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -106,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StylesheetJan.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StylesheetJan.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/StylesheetJan.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61755145">
+            <state vertical-scroll-proportion="0.0">
               <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
               <folding />
             </state>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/html/languages.xml" />
         <option value="$PROJECT_DIR$/testSida/testDB.js" />
         <option value="$PROJECT_DIR$/html/CustomerMainJan.html" />
-        <option value="$PROJECT_DIR$/html/MenuListJan.html" />
         <option value="$PROJECT_DIR$/css/StylesheetJan.css" />
+        <option value="$PROJECT_DIR$/html/MenuListJan.html" />
       </list>
     </option>
   </component>
@@ -832,9 +832,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/StylesheetJan.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/CustomerMainJan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769">
+        <state vertical-scroll-proportion="-19.384615">
           <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
             <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#ul#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -845,16 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/MenuListJan.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.384615">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/StylesheetJan.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61755145">
-          <caret line="100" column="13" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.34336677">
+          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
           <folding />
         </state>
       </provider>
