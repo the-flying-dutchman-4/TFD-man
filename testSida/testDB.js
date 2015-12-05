@@ -43,7 +43,10 @@ $(document).ready(function()
                     '</button></td><td class="price">' + result.payload[i].pub_price + " kr"+
                     '</td><td class="count">' + result.payload[i].count +
                     '</td><td class ="id" style ="display:none">' + result.payload[i].beer_id +
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
                     '</td></tr>')
     
                 }
