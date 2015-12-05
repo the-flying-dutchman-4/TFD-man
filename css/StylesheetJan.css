@@ -98,13 +98,13 @@ h4 {
     margin-right: 0.5%;
     margin-left: 0.5%;
     top: 22%;
-    width: 48%;
+    width: 46%;
     height: 60%;
     table-layout: fixed;
     overflow: auto;
 }
 #cart_box{
-    width:32%
+    width:34%
 }
 #allergies_box{
     width:16%
@@ -172,7 +172,7 @@ th{
     }
 .cart
 {
-    position:fixed;
+    position:auto;
     right:0;
     top:120px;
     width:350px;

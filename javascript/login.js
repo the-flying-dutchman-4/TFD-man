@@ -16,7 +16,7 @@ $(document).ready(function(){
                     var temp = parseInt(result.payload[0].user_id, 10)
                     var temp2 = $.inArray(temp, admins)
                     if (temp2 > -1) {
-                        $(location).attr('href', 'MenuListJan.html')
+                        $(location).attr('href', 'completeMenu_use.html')
                     }
                     else {
                         $(location).attr('href', 'CustomerMain_use.html')
