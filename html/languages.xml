@@ -154,5 +154,48 @@
         </swedish>
     </translation>
 
+    <translation id="a[name='allergies']">
+        <english>
+            Allergies
+        </english>
+        <swedish>
+            Allerigier
+        </swedish>
+    </translation>
 
+    <translation id="a[name='Allergies gluten']">
+        <english>
+            Gluten intolerance
+        </english>
+        <swedish>
+            Glutenintolerans
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Allergies lactose']">
+        <english>
+            Lactose intolerance
+        </english>
+        <swedish>
+            Laktosintolerans
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Allergies nut']">
+        <english>
+            Nut allergy
+        </english>
+        <swedish>
+            Nötallergi
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Allergies gluten']">
+        <english>
+            Gluten intolerance
+        </english>
+        <swedish>
+            Gluten intolerans
+        </swedish>
+    </translation>
 </translations>
