@@ -37,8 +37,6 @@ nav ul {
     border-radius: 10px;
     font-weight: bold;
     list-style-type: none;
-    margin: 20;
-    padding: 20;
     overflow: hidden;
     background-color: #e3e3e3;
 }
@@ -120,24 +118,22 @@ h4 {
     width:16%
 }
 
-#footer {
+#langdiv {
     top: 90%;
-    height: 9%;
-    width: 100%;
-    background-color: #668284;
-    clear: both;
-    margin-bottom: 5px;
-    font-family: Verdana, sans-serif;
-    font-size: 14px;
-    text-align: center;
-    color: #ffffff;
+    height: 8%;
+    width: 25%;
+    border-radius: 0px;
+    margin-left: 3%;
+    padding: 0;
+    overflow: hidden;
 }
 
-#footer p {
-    position: relative;
-    float: initial;
-    padding-top: 15px;
+.flag {
+    border-radius: 5px;
+    -webkit-filter: blur(0px) grayscale(0) sepia(0);
+
 }
+
 
 table{
 width: 100%;

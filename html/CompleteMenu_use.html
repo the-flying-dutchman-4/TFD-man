@@ -21,8 +21,6 @@
                     <li><a href="#news">News</a></li>
                     <input type ="text" name="Search" placeholder="Search">
                     <ul style="float:right;list-style-type:none;">
-                        <li><img src="../images/uk.png" width="45" height="45" id="uk" onclick="setLanguage('english')"></li>
-                        <li><img src="../images/se.png" width="45" height="45" id ="swe" onclick= "setLanguage('swedish')"></li>
                         <li><a href="#logout">Log out</a></li>
                     </ul>
                 </ul>
@@ -68,11 +66,10 @@
                     <p id="totalPrice" class="total" name="total price">Total Price:0</p>
                     <button class = "buy" onclick="buy" name="Buy">Buy</button>
                 </div>
-
-
             </div>
-            <div id="footer">
-                <p name="Showing">Showing active users credit</p>
+            <div id="langdiv">
+                <a href="#uk"><img src="../images/uk_flag.jpeg" width="45" height="45" class="flag" onclick="setLanguage('english')"></a>
+                <a href="#sv"><img src="../images/swedish-flag.jpeg" width="45" height="45" class ="flag" onclick= "setLanguage('swedish')"></a>
             </div>
         </div>
     </body>
