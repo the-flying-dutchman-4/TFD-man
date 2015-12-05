@@ -98,10 +98,16 @@ h4 {
     margin-right: 0.5%;
     margin-left: 0.5%;
     top: 22%;
-    width: 32%;
+    width: 42%;
     height: 60%;
     table-layout: fixed;
     overflow: auto;
+}
+#cart_box{
+    width:32%
+}
+#allergies_box{
+    width:16%
 }
 
 #footer {
