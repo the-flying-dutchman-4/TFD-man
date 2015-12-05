@@ -16,9 +16,17 @@ $(document).ready(function(){
                     var temp = parseInt(result.payload[0].user_id, 10)
                     var temp2 = $.inArray(temp, admins)
                     if (temp2 > -1) {
+                        sessionStorage.setItem("first_name", result.payload[0].first_name)
+                        sessionStorage.setItem("last_name", result.payload[0].last_name)
+                        sessionStorage.setItem("assets", result.payload[0].assets)
+                        sessionStorage.setItem("user", username)
                         $(location).attr('href', 'completeMenu_use.html')
                     }
                     else {
+                        sessionStorage.setItem("first_name", result.payload[0].first_name)
+                        sessionStorage.setItem("last_name", result.payload[0].last_name)
+                        sessionStorage.setItem("assets", result.payload[0].assets)
+                        sessionStorage.setItem("user", username)
                         $(location).attr('href', 'CustomerMain_use.html')
                     }
                 }
