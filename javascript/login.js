@@ -19,14 +19,14 @@ $(document).ready(function(){
                         sessionStorage.setItem("first_name", result.payload[0].first_name)
                         sessionStorage.setItem("last_name", result.payload[0].last_name)
                         sessionStorage.setItem("assets", result.payload[0].assets)
-                        sessionStorage.setItem("user", username)
+                        sessionStorage.setItem("user", result.payload[0].username)
                         $(location).attr('href', 'completeMenu_use.html')
                     }
                     else {
                         sessionStorage.setItem("first_name", result.payload[0].first_name)
                         sessionStorage.setItem("last_name", result.payload[0].last_name)
                         sessionStorage.setItem("assets", result.payload[0].assets)
-                        sessionStorage.setItem("user", username)
+                        sessionStorage.setItem("user", result.payload[0].username)
                         $(location).attr('href', 'CustomerMain_use.html')
                     }
                 }

@@ -8,6 +8,8 @@
 $(document).ready(function() 
 {
  
+    
+
     var price
     $.ajax({
         type: 'GET',
@@ -16,7 +18,13 @@ $(document).ready(function()
         async: true,
         success: function (result) 
         {
-           
+            var data1 = sessionStorage.getItem("first_name");
+            var data2 = sessionStorage.getItem("last_name");
+            var data3 = sessionStorage.getItem("assets");
+            $('#Infocontent').append(
+                '<tr><td>'+data1+" "+data2+'</td><td>'+data3+'</td></tr>'
+                );
+
             for (var i = 0; result.payload.length; i++) 
             {
                 if (result.payload[i].namn != "" && result.payload[i].count > 0)
@@ -49,6 +57,9 @@ $(document).ready(function()
                 }
 
             }
+
+            // 
+
 
         },
         error: function () {

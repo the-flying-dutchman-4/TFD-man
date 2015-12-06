@@ -1,16 +1,30 @@
 var beerList = new Array(0);
 var total = 0;
+
 var nameList = new Array(0);
 var priceList = new Array(0);
 var idList = new Array(0);
+
 var dragList1 = ["Black Tower", "Brooklyn", "Chilcas", "Dr L", "Hoegaarden", "Paulaner"];
 var dragList2 = [35, 25, 50, 85, 20, 25];
+
+// var orderList = new Array(0);
+// var orderPoint = 0;
+// var unredo = false;
+
+function Order(action, id, price)
+{
+	this.action = action;
+	this.id = id;
+	this.price = price;
+}
 
 function addProduct(id, price, dragOn) 
 {
 	var flag = 0;
 	var index = 0;
 	var name;
+	var order1 = new Order('add', id, price); 
 	// alert(typeof name);
 	// alert(typeof price);
 	// alert(typeof Number(name));
@@ -56,6 +70,12 @@ function addProduct(id, price, dragOn)
 		else
 		{
 			cell1.innerHTML = id;
+			// if( unredo == false )
+			// {
+			// orderList.push(order1);
+			// orderPoint++;
+			// 	unredo = false;
+			// }
 		}
 	 	
 	    	cell2.innerHTML = 1;
@@ -69,6 +89,8 @@ function addProduct(id, price, dragOn)
 
 function deleteProduct(id, price) 
 {
+	// var order1 = new Order('delete', id, price); 
+
 	for( var i = 0; i<beerList.length;i++ )
 	{
 		if (id == beerList[i])
@@ -96,7 +118,12 @@ function deleteProduct(id, price)
           				break;
 			}
 		}
-	}		
+	}
+	// if(dragOn == 1)
+	// {
+	// 		orderList.push(order1);
+	// 		orderPoint++;
+	// }		
 }
 
 function allowDrop(ev) 
@@ -129,3 +156,30 @@ function makeList(name, price, id )
 	idList.push(id);
 	// alert(name);
 }
+
+// function undo()
+// {
+// 	// var price;
+// 	if( orderPoint>0 )
+// 	{
+// 		for( var i = 0; i<dragList1.length;i++ )
+// 		{
+// 			if (id == dragList1[i]) 
+// 			{
+// 			        	price = dragList2[i];
+// 			        	break;
+// 			}
+// 		}
+// 		deleteProduct( orderList[orderPoint-1], price);
+// 	}
+// 	else
+// 	{
+
+// 	}
+	
+// }
+
+// function redo()
+// {
+
+// }
