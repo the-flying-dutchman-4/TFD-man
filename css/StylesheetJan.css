@@ -130,6 +130,17 @@ h4 {
 
 .flag {
     border-radius: 5px;
+    -webkit-filter: blur(0.2px) grayscale(0.6) sepia(0.7);
+
+
+}
+
+.flag:hover:not(.active) {
+    background-color: rgba(142, 203, 146, 0.5);
+}
+
+.active {
+    background-color: rgba(142, 203, 146, 0.5);
     -webkit-filter: blur(0px) grayscale(0) sepia(0);
 
 }
