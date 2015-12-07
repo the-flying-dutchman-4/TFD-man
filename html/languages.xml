@@ -336,4 +336,12 @@
         </swedish>
     </translation>
 
+    <translation id="a[name='name']">
+        <english>
+            Name
+        </english>
+        <swedish>
+            Namn
+        </swedish>
+    </translation>
 </translations>
