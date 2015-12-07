@@ -1,7 +1,7 @@
 var beerList = new Array(0);
 var total = 0;
-var tempID;
-var tempPrice;
+var tempID = new Array(0);
+var tempPrice = new Array(0);
 var tempName;
 
 var nameList = new Array(0);
@@ -84,13 +84,15 @@ function addProduct(id, price, dragOn)
 	 	
 	    	cell2.innerHTML = 1;
 	    	cell3.innerHTML = price;
-	    	beerList.push(id);	
-	   actionListName.push(name);
-	actionListID.push(id);
-	actionListPrice.push(price);
 
+
+
+	    	beerList.push(id);
+			actionListID.push(id);
+		actionListPrice.push(price);
 	}
-	alert("hej");
+	//actionListID.append(id);
+	//actionListPrice.append(price);
 
 	total+=Number(price);
 
@@ -171,20 +173,31 @@ function makeList(name, price, id )
 
  function undo()
  {
+console.log("undo pressed");
+console.log(actionListID.length)
  	// var price;
- 	if( actionList.length >0 )
+ 	if( actionListID.length >0 )
  	{
- 		tempID = actionListID[-1];
- 		tempPrice = actionListPrice[-1];
- 		deleteProduct(actionListID[-1], actionListPrice[-1]);
+ 		tempID.push(actionListID[actionListID.length-1]);
+		console.log(tempID);
+ 		tempPrice.push(actionListPrice[actionListPrice.length-1]);
+ 		deleteProduct(actionListID[actionListID.length -1], actionListPrice[actionListPrice.length-1]);
+		actionListID.splice(actionListID.length-1, 1);
+		actionListPrice.splice(actionListPrice.length-1, 1);
+
  	}
 	
  }
 
  function redo()
  {
-	 if(actionList.length >0){
-		 addProduct(actionListID[-1],actionListPrice[-1],1);
+	 console.log("redo pressed");
+
+	 if(tempID.length >0){
+
+		 addProduct(tempID[0],tempPrice[0] , 1);
+		 tempID.splice(0,1);
+		 tempPrice.splice(0,1);
 
 	 }
 
