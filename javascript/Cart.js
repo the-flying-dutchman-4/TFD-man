@@ -87,10 +87,11 @@ function addProduct(id, price, dragOn)
 	    	cell2.innerHTML = 1;
 	    	cell3.innerHTML = price;
 	    	beerList.push(id);
+		actionListID.push(id);
+		actionListPrice.push(price);
 	}
-	actionListName.append(name);
-	actionListID.append(id);
-	actionListPrice.append(price);
+	//actionListID.append(id);
+	//actionListPrice.append(price);
 	total+=Number(price);
 	document.getElementById("totalPrice").innerHTML="Total: $"+total;
 }
@@ -167,20 +168,25 @@ function makeList(name, price, id )
 
  function undo()
  {
+console.log("undo pressed");
+console.log(actionListID.length)
  	// var price;
- 	if( actionList.length >0 )
+ 	if( actionListID.length >0 )
  	{
- 		tempID = actionListID[-1];
- 		tempPrice = actionListPrice[-1];
- 		deleteProduct(actionListID[-1], actionListPrice[-1]);
+ 		tempID = actionListID[actionListID.length-1];
+		console.log(tempID);
+ 		tempPrice = actionListPrice[actionListPrice.length-1];
+ 		deleteProduct(actionListID[actionListID.length -1], actionListPrice[actionListPrice.length-1]);
  	}
 	
  }
 
  function redo()
  {
-	 if(actionList.length >0){
-		 addProduct(actionListID[-1],actionListPrice[-1],1);
+	 console.log("redo pressed");
+
+	 if(actionListID.length >0){
+		 addProduct(actionListID[actionListID.length -1-1],actionListPrice[actionListPrice.length-1],1);
 
 	 }
 
