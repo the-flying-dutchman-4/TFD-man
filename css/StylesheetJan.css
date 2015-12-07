@@ -245,3 +245,14 @@ th{
     width: 15% !important;
     font-size: 80% !important;
 }
+.button_class{
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1000px;
+    width: 220px;
+    padding: 1em;
+    border-radius: 1000px;
+    color: white; }
+.button_class:hover{
+    background-color: rgba(142, 203, 146, 0.5); }
