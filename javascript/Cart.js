@@ -173,9 +173,9 @@ console.log(actionListID.length)
  	// var price;
  	if( actionListID.length >0 )
  	{
- 		tempID = actionListID[-1];
+ 		tempID = actionListID[actionListID.length-1];
 		console.log(tempID);
- 		tempPrice = actionListPrice[-1];
+ 		tempPrice = actionListPrice[actionListPrice.length-1];
  		deleteProduct(actionListID[actionListID.length -1], actionListPrice[actionListPrice.length-1]);
  	}
 	

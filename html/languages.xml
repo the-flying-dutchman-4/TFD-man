@@ -136,12 +136,12 @@
     </translation>
 
 
-    <translation id="[id='Användare']">
+    <translation id="[id='user']">
         <english>
-            Users
+            User:
         </english>
         <swedish>
-            Användare
+            Användare:
         </swedish>
     </translation>
 
@@ -199,16 +199,16 @@
         </swedish>
     </translation>
 
-    <translation id="[id='id of Beer']">
+    <translation id="[id='id']">
         <english>
-            id
+            Name:
         </english>
         <swedish>
-            Namn
+            Namn:
         </swedish>
     </translation>
 
-    <translation id="[id='Price']">
+    <translation id="[id='Price_']">
         <english>
             Price
         </english>
@@ -217,6 +217,15 @@
         </swedish>
     </translation>
 
+    <translation id="[id='in_stock']">
+        <english>
+            In stock
+        </english>
+        <swedish>
+            I lager
+        </swedish>
+    </translation>
+
     <translation id="[id='in stock']">
         <english>
             In stock
@@ -226,26 +235,18 @@
         </swedish>
     </translation>
 
-
-    <translation id="[id='in stock']">
-        <english>
-            In stock
-        </english>
-        <swedish>
-            I lager
-        </swedish>
-    </translation>
 
     <translation id="[id='user']">
         <english>
-            User:
+            User info
         </english>
         <swedish>
-            Användare:
+            Användarinformation
         </swedish>
     </translation>
 
-    <translation id="[id='credits left']">
+
+    <translation id="[id='credits_left']">
         <english>
             Credits:
         </english>
@@ -254,8 +255,7 @@
         </swedish>
     </translation>
 
-
-    <translation id="[id='shopping cart']">
+    <translation id="[id='shopping_cart']">
         <english>
             Shopping Cart
         </english>
@@ -264,7 +264,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='total price']">
+    <translation id="[id='total_price']">
         <english>
             Total Price:
         </english>
@@ -273,7 +273,8 @@
         </swedish>
     </translation>
 
-    <translation id="[id='buy']">
+
+    <translation id="[id='Buy']">
         <english>
             Buy
         </english>
@@ -291,7 +292,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='Quick Order']">
+    <translation id="[id='Quick_Order']">
         <english>
             Quick order of Popular Beers
         </english>
@@ -300,7 +301,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='price']">
+    <translation id="[id='Price_']">
         <english>
             Price
         </english>
@@ -336,21 +337,30 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='name']">
+    <translation id="[id='id']">
         <english>
-            Name:
+            id:
         </english>
         <swedish>
             Namn:
         </swedish>
     </translation>
 
-    <translation id="a[name='menu']">
+    <translation id="[id='menu']">
         <english>
             Menu
         </english>
         <swedish>
             Meny
+        </swedish>
+    </translation>
+
+    <translation id="[id='beeid']">
+        <english>
+            Beer ID
+        </english>
+        <swedish>
+            Öl ID
         </swedish>
     </translation>
 </translations>
