@@ -318,4 +318,22 @@
         </swedish>
     </translation>
 
+    <translation id="a[name='Undo']">
+        <english>
+            Undo
+        </english>
+        <swedish>
+            Ångra
+        </swedish>
+    </translation>
+
+    <translation id="a[name='Redo']">
+        <english>
+            Redo
+        </english>
+        <swedish>
+            Gör om
+        </swedish>
+    </translation>
+
 </translations>
