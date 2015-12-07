@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <translations>
-    <translation id="a[name='home']">
+    <translation id="[id='home']">
         <english>
             Home
         </english>
@@ -9,7 +9,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='news']">
+    <translation id="[id='news']">
         <english>
             News
         </english>
@@ -18,7 +18,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Öl']">
+    <translation id="[id='Öl']">
         <english>
             Beer
         </english>
@@ -27,7 +27,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Ljus']">
+    <translation id="[id='Ljus']">
         <english>
             Light lager
         </english>
@@ -36,7 +36,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Mörk']">
+    <translation id="[id='Mörk']">
         <english>
             Dark lager
         </english>
@@ -45,7 +45,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Porter']">
+    <translation id="[id='Porter']">
         <english>
             Porter and Stout
         </english>
@@ -54,7 +54,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Special']">
+    <translation id="[id='Special']">
         <english>
             Special beer
         </english>
@@ -63,7 +63,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Veteöl']">
+    <translation id="[id='Veteöl']">
         <english>
             Wheat beer
         </english>
@@ -72,7 +72,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Vin']">
+    <translation id="[id='Vin']">
         <english>
             Wine
         </english>
@@ -81,7 +81,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Rött']">
+    <translation id="[id='Rött']">
         <english>
             Red wine
         </english>
@@ -90,7 +90,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Vitt']">
+    <translation id="[id='Vitt']">
         <english>
             White wine
         </english>
@@ -99,7 +99,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Alkoholfritt']">
+    <translation id="[id='Alkoholfritt']">
         <english>
             Alcohol free
         </english>
@@ -108,7 +108,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Other']">
+    <translation id="[id='Other']">
         <english>
             Other
         </english>
@@ -117,7 +117,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Dryck']">
+    <translation id="[id='Dryck']">
         <english>
             Beverages
         </english>
@@ -126,7 +126,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Stock']">
+    <translation id="[id='Stock']">
         <english>
             Stock
         </english>
@@ -136,7 +136,7 @@
     </translation>
 
 
-    <translation id="a[name='Användare']">
+    <translation id="[id='Användare']">
         <english>
             Users
         </english>
@@ -145,7 +145,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='logout']">
+    <translation id="[id='logout']">
         <english>
             Log out
         </english>
@@ -154,7 +154,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='allergies']">
+    <translation id="[id='allergies']">
         <english>
             Allergies
         </english>
@@ -163,7 +163,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Allergies gluten']">
+    <translation id="[id='Allergies gluten']">
         <english>
             Gluten intolerance
         </english>
@@ -172,7 +172,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Allergies lactose']">
+    <translation id="[id='Allergies lactose']">
         <english>
             Lactose intolerance
         </english>
@@ -181,7 +181,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Allergies nut']">
+    <translation id="[id='Allergies nut']">
         <english>
             Nut allergy
         </english>
@@ -190,7 +190,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Beer list']">
+    <translation id="[id='Beer list']">
         <english>
             Comlete Beer List
         </english>
@@ -199,16 +199,16 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Name of Beer']">
+    <translation id="[id='id of Beer']">
         <english>
-            Name
+            id
         </english>
         <swedish>
             Namn
         </swedish>
     </translation>
 
-    <translation id="a[name='Price']">
+    <translation id="[id='Price_']">
         <english>
             Price
         </english>
@@ -217,7 +217,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='in stock']">
+    <translation id="[id='in_stock']">
         <english>
             In stock
         </english>
@@ -226,17 +226,7 @@
         </swedish>
     </translation>
 
-
-    <translation id="a[name='in stock']">
-        <english>
-            In stock
-        </english>
-        <swedish>
-            I lager
-        </swedish>
-    </translation>
-
-    <translation id="a[name='user']">
+    <translation id="[id='user']">
         <english>
             User:
         </english>
@@ -245,7 +235,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='credits left']">
+    <translation id="[id='credits_left']">
         <english>
             Credits:
         </english>
@@ -255,7 +245,7 @@
     </translation>
 
 
-    <translation id="a[name='shopping cart']">
+    <translation id="[id='shopping_cart']">
         <english>
             Shopping Cart
         </english>
@@ -264,7 +254,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='total price']">
+    <translation id="[id='total_price']">
         <english>
             Total Price:
         </english>
@@ -273,7 +263,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='buy']">
+    <translation id="[id='buy']">
         <english>
             Buy
         </english>
@@ -282,7 +272,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='showing']">
+    <translation id="[id='showing']">
         <english>
             Showing active users credit
         </english>
@@ -291,7 +281,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Quick Order']">
+    <translation id="[id='Quick_Order']">
         <english>
             Quick order of Popular Beers
         </english>
@@ -300,7 +290,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='price']">
+    <translation id="[id='price']">
         <english>
             Price
         </english>
@@ -309,7 +299,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Quantity']">
+    <translation id="[id='Quantity']">
         <english>
             Quantity
         </english>
@@ -318,7 +308,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Undo']">
+    <translation id="[id='Undo']">
         <english>
             Undo
         </english>
@@ -327,7 +317,7 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='Redo']">
+    <translation id="[id='Redo']">
         <english>
             Redo
         </english>
@@ -336,16 +326,16 @@
         </swedish>
     </translation>
 
-    <translation id="a[name='name']">
+    <translation id="[id='id']">
         <english>
-            Name:
+            id:
         </english>
         <swedish>
             Namn:
         </swedish>
     </translation>
 
-    <translation id="a[name='menu']">
+    <translation id="[id='menu']">
         <english>
             Menu
         </english>

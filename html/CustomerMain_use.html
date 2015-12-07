@@ -19,48 +19,48 @@
                     <li><a class="active" href="CustomerMain_use.html">Home</a></li>
                     <li><a href="CompleteMenu_use.html">Menu</a></li>
                     <li><a href="#news">News</a></li>
-                    <input type ="text" name="Search" placeholder="Search">
+                    <input type ="text" id="Search" placeholder="Search">
                     <ul style="float:right;list-style-type:none;">
                         <li><img src="../images/uk.png" width="45" height="45" id="uk" onclick="setLanguage('english')"></li>
                         <li><img src="../images/se.png" width="45" height="45" id ="swe" onclick= "setLanguage('swedish')"></li>
-                        <li><a href="login.html" name="logout">Log out</a></li>
+                        <li><a href="login.html" id="logout">Log out</a></li>
                     </ul>
                 </ul>
             </nav>
             <div class="oneofthree" id="menu_box2">
-<h2 id="quick-add-header" class="i18n" name="Quick Order">Quick Order of Most Popular Beers</h2>
+<h2 id="quick-add-header" class="i18n" id="Quick_Order">Quick Order of Most Popular Beers</h2>
 		<div id="favorites" ondrop="drop(event)" ondragover="allowDrop(event)">
 			<table border="2" cellpadding="10" cellspacing="10">
 			<tr>
 				<td>
 				<img src="http://www.spendrups.se/upload/ProductDB/%C3%96l/Spendrups_Bryggeri_Premium_Lager_21_detalj.jpg" width="70" height="170" id="drag1" draggable="true" ondragstart="drag(event,1,5)" align="justify">
 					<p>Black Tower</p>
-                    <p name="price">Price<nobr>: 35kr</nobr></p>
+                    <p id="price">Price<nobr>: 35kr</nobr></p>
 				</td>
 				<td>
 				<img src="http://www.spendrups.se/upload/ProductDB/%C3%96l/Spendrups_Bryggeri_Premium_Lager_21_detalj.jpg" width="70" height="170" id="drag2" draggable="true" ondragstart="drag(event,2,5)">
 					<p>Brooklyn</p>
-                    <p name="price">Price<nobr>: 25kr</nobr></p>
+                    <p id="price">Price<nobr>: 25kr</nobr></p>
 				</td>
 				<td>
 				<img src="http://www.spendrups.se/upload/ProductDB/%C3%96l/Spendrups_Bryggeri_Premium_Lager_21_detalj.jpg" width="70" height="170" id="drag3" draggable="true" ondragstart="drag(event,3,5)">
 					<p>Chilcas</p>
-                    <p name="price">Price<nobr>: 50kr</nobr></p>
+                    <p id="price">Price<nobr>: 50kr</nobr></p>
 				</td>
 				<td>
 				<img src="http://www.spendrups.se/upload/ProductDB/%C3%96l/Spendrups_Bryggeri_Premium_Lager_21_detalj.jpg" width="70" height="170" id="drag4" draggable="true" ondragstart="drag(event,4,5)">
 					<p>Dr L</p>
-                    <p name="price">Price<nobr>: 85kr</nobr></p>
+                    <p id="price">Price<nobr>: 85kr</nobr></p>
 				</td>
 				<td>
 				<img src="http://www.spendrups.se/upload/ProductDB/%C3%96l/Spendrups_Bryggeri_Premium_Lager_21_detalj.jpg" width="70" height="170" id="drag5" draggable="true" ondragstart="drag(event,5,5)">
 					<p>Hoegaarden</p>
-                    <p name="price">Price<nobr>: 20kr</nobr></p>
+                    <p id="price">Price<nobr>: 20kr</nobr></p>
 				</td>
 				<td>
 				<img src="http://www.spendrups.se/upload/ProductDB/%C3%96l/Spendrups_Bryggeri_Premium_Lager_21_detalj.jpg" width="70" height="170" id="drag6" draggable="true" ondragstart="drag(event,6,5)">
 					<p>Paulaner</p>
-                    <p name="price">Price<nobr>: 25kr</nobr></p>
+                    <p id="price">Price<nobr>: 25kr</nobr></p>
 				</td>
 			</tr>
 			</table> 	
@@ -68,27 +68,27 @@
             </div>
             <div class="oneofthree" id="cart_box2">
                 <div class="cart" ondrop="drop(event,1,5)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
-                    <h2 name="User" >User Info</h2>
+                    <h2 id="User" >User Info</h2>
                     <table id="Infocontent" style="width:300px;height:auto;" border="1">
                     	<tr>
-                    		<th width=200>Name</th>
+                    		<th width=200>Name:</th>
                     		<th width=100>Credits</th>
                     	</tr>
                     </table>
-                    <h2 name="shopping cart" >Shopping Cart</h2>
+                    <h2 id="shopping cart" >Shopping Cart</h2>
                     <table id="cartcontent" style="width:300px;height:auto;" border="1">
                         <thead>
                             <tr>
-                                <th field="name" width=140>Name</th>
+                                <th field="id" width=140>id</th>
                                 <th field="quantity" width=60 align="right">Quantity</th>
                                 <th field="price" width=60 align="right">Price</th>
                             </tr>
                         </thead>
                     </table>
-                    <p id="totalPrice" class="total" name="total price">Total:</p>
-                    <button class = "buy" onclick="buy" name="Buy">Buy</button>
-                    <button name="Undo">Undo</button>
-                    <button name="Redo">Redo</button>
+                    <p id="totalPrice" class="total" id="total price">Total:</p>
+                    <button class = "buy" onclick="buy" id="Buy">Buy</button>
+                    <button id="Undo">Undo</button>
+                    <button id="Redo">Redo</button>
                 </div>
 
 
