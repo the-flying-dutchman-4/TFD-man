@@ -163,7 +163,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='Allergies gluten']">
+    <translation id="[id='Allergies_gluten']">
         <english>
             Gluten intolerance
         </english>
@@ -172,7 +172,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='Allergies lactose']">
+    <translation id="[id='Allergies_lactose']">
         <english>
             Lactose intolerance
         </english>
@@ -181,7 +181,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='Allergies nut']">
+    <translation id="[id='Allergies_nut']">
         <english>
             Nut allergy
         </english>
@@ -228,10 +228,10 @@
 
     <translation id="[id='user']">
         <english>
-            User:
+            User info
         </english>
         <swedish>
-            Användare:
+            Användarinformation
         </swedish>
     </translation>
 
@@ -263,7 +263,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='buy']">
+    <translation id="[id='Buy']">
         <english>
             Buy
         </english>
@@ -290,7 +290,7 @@
         </swedish>
     </translation>
 
-    <translation id="[id='price']">
+    <translation id="[id='Price_']">
         <english>
             Price
         </english>
