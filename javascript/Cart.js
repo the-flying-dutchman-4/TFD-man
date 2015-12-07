@@ -1,9 +1,15 @@
 var beerList = new Array(0);
 var total = 0;
+var tempID;
+var tempPrice;
+var tempName;
 
 var nameList = new Array(0);
 var priceList = new Array(0);
 var idList = new Array(0);
+var actionListID =new Array(0);
+var actionListPrice = new Array(0);
+var actionListName = new Array(0);
 
 var dragList1 = ["Black Tower", "Brooklyn", "Chilcas", "Dr L", "Hoegaarden", "Paulaner"];
 var dragList2 = [35, 25, 50, 85, 20, 25];
@@ -82,7 +88,9 @@ function addProduct(id, price, dragOn)
 	    	cell3.innerHTML = price;
 	    	beerList.push(id);
 	}
-				
+	actionListName.append(name);
+	actionListID.append(id);
+	actionListPrice.append(price);
 	total+=Number(price);
 	document.getElementById("totalPrice").innerHTML="Total: $"+total;
 }
@@ -157,29 +165,23 @@ function makeList(name, price, id )
 	// alert(name);
 }
 
-// function undo()
-// {
-// 	// var price;
-// 	if( orderPoint>0 )
-// 	{
-// 		for( var i = 0; i<dragList1.length;i++ )
-// 		{
-// 			if (id == dragList1[i]) 
-// 			{
-// 			        	price = dragList2[i];
-// 			        	break;
-// 			}
-// 		}
-// 		deleteProduct( orderList[orderPoint-1], price);
-// 	}
-// 	else
-// 	{
-
-// 	}
+ function undo()
+ {
+ 	// var price;
+ 	if( actionList.length >0 )
+ 	{
+ 		tempID = actionListID[-1];
+ 		tempPrice = actionListPrice[-1];
+ 		deleteProduct(actionListID[-1], actionListPrice[-1]);
+ 	}
 	
-// }
+ }
 
-// function redo()
-// {
+ function redo()
+ {
+	 if(actionList.length >0){
+		 addProduct(actionListID[-1],actionListPrice[-1],1);
 
-// }
+	 }
+
+ }
