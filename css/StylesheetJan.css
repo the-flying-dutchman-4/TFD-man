@@ -10,6 +10,7 @@ a{
 }
 p {
     white-space: nowrap;
+    display: inline-block;
 }
 img {
     border-radius: 30px;
