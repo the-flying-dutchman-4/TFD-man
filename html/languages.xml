@@ -136,12 +136,12 @@
     </translation>
 
 
-    <translation id="[id='Användare']">
+    <translation id="[id='user']">
         <english>
-            Users
+            User:
         </english>
         <swedish>
-            Användare
+            Användare:
         </swedish>
     </translation>
 
@@ -199,12 +199,12 @@
         </swedish>
     </translation>
 
-    <translation id="[id='id of Beer']">
+    <translation id="[id='id']">
         <english>
-            id
+            Name:
         </english>
         <swedish>
-            Namn
+            Namn:
         </swedish>
     </translation>
 
@@ -352,6 +352,15 @@
         </english>
         <swedish>
             Meny
+        </swedish>
+    </translation>
+
+    <translation id="[id='beeid']">
+        <english>
+            Beer ID
+        </english>
+        <swedish>
+            Öl ID
         </swedish>
     </translation>
 </translations>
