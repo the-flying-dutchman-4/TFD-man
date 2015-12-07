@@ -256,3 +256,6 @@ th{
     color: white; }
 .button_class:hover{
     background-color: rgba(142, 203, 146, 0.5); }
+#buyButton{
+    width: 300px;
+}
