@@ -1,7 +1,7 @@
 var beerList = new Array(0);
 var total = 0;
-var tempID;
-var tempPrice;
+var tempID = new Array(0);
+var tempPrice = new Array(0);
 var tempName;
 
 var nameList = new Array(0);
@@ -87,7 +87,7 @@ function addProduct(id, price, dragOn)
 	    	cell2.innerHTML = 1;
 	    	cell3.innerHTML = price;
 	    	beerList.push(id);
-		actionListID.push(id);
+			actionListID.push(id);
 		actionListPrice.push(price);
 	}
 	//actionListID.append(id);
@@ -173,10 +173,13 @@ console.log(actionListID.length)
  	// var price;
  	if( actionListID.length >0 )
  	{
- 		tempID = actionListID[actionListID.length-1];
+ 		tempID.push(actionListID[actionListID.length-1]);
 		console.log(tempID);
- 		tempPrice = actionListPrice[actionListPrice.length-1];
+ 		tempPrice.push(actionListPrice[actionListPrice.length-1]);
  		deleteProduct(actionListID[actionListID.length -1], actionListPrice[actionListPrice.length-1]);
+		actionListID.splice(actionListID.length-1, 1);
+		actionListPrice.splice(actionListPrice.length-1, 1);
+
  	}
 	
  }
@@ -185,8 +188,11 @@ console.log(actionListID.length)
  {
 	 console.log("redo pressed");
 
-	 if(actionListID.length >0){
-		 addProduct(actionListID[actionListID.length -1-1],actionListPrice[actionListPrice.length-1],1);
+	 if(tempID.length >0){
+
+		 addProduct(tempID[0],tempPrice[0] , 1);
+		 tempID.splice(0,1);
+		 tempPrice.splice(0,1);
 
 	 }
 
