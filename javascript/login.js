@@ -1,10 +1,13 @@
 "use strict"
+var username;
+var pwd;
+
 $(document).ready(function(){
     var textDisp = $('#display');
     var admins = [2,24,17,20,25];
     $('#submitButton').click(function(){
-        var username= $('#user').val();
-        var pwd = $('#pw').val();
+        username= $('#user').val();
+        pwd = $('#pw').val();
         console.log(username,pwd)
         $.ajax({
             type: 'GET',
@@ -19,14 +22,16 @@ $(document).ready(function(){
                         sessionStorage.setItem("first_name", result.payload[0].first_name)
                         sessionStorage.setItem("last_name", result.payload[0].last_name)
                         sessionStorage.setItem("assets", result.payload[0].assets)
-                        sessionStorage.setItem("user", result.payload[0].username)
+                        sessionStorage.setItem("user", username)
+                        sessionStorage.setItem("pwd", pwd)
                         $(location).attr('href', 'completeMenu_use.html')
                     }
                     else {
                         sessionStorage.setItem("first_name", result.payload[0].first_name)
                         sessionStorage.setItem("last_name", result.payload[0].last_name)
                         sessionStorage.setItem("assets", result.payload[0].assets)
-                        sessionStorage.setItem("user", result.payload[0].username)
+                        sessionStorage.setItem("user", username)
+                        sessionStorage.setItem("pwd", pwd)
                         $(location).attr('href', 'CustomerMain_use.html')
                     }
                 }

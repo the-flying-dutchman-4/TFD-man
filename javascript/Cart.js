@@ -12,19 +12,20 @@ var dragList2 = [35, 25, 50, 85, 20, 25];
 // var orderPoint = 0;
 // var unredo = false;
 
-function Order(action, id, price)
-{
-	this.action = action;
-	this.id = id;
-	this.price = price;
-}
+// function Order(action, id, price)
+// {
+// 	this.action = action;
+// 	this.id = id;
+// 	this.price = price;
+// }
 
 function addProduct(id, price, dragOn) 
 {
 	var flag = 0;
 	var index = 0;
 	var name;
-	var order1 = new Order('add', id, price); 
+	// var order1 = new Order('add', id, price); 
+	// var realId;
 	// alert(typeof name);
 	// alert(typeof price);
 	// alert(typeof Number(name));
@@ -66,16 +67,12 @@ function addProduct(id, price, dragOn)
 				}
 			}
 			cell1.innerHTML = name;
+			
 	    	}
 		else
 		{
 			cell1.innerHTML = id;
-			// if( unredo == false )
-			// {
-			// orderList.push(order1);
-			// orderPoint++;
-			// 	unredo = false;
-			// }
+		
 		}
 	 	
 	    	cell2.innerHTML = 1;
@@ -85,12 +82,13 @@ function addProduct(id, price, dragOn)
 				
 	total+=Number(price);
 	document.getElementById("totalPrice").innerHTML="Total: $"+total;
+	// alert(typeof beerList[beerList.length-1]);
 }
 
 function deleteProduct(id, price) 
 {
 	// var order1 = new Order('delete', id, price); 
-
+	// alert(beerList.length);
 	for( var i = 0; i<beerList.length;i++ )
 	{
 		if (id == beerList[i])
@@ -157,29 +155,3 @@ function makeList(name, price, id )
 	// alert(name);
 }
 
-// function undo()
-// {
-// 	// var price;
-// 	if( orderPoint>0 )
-// 	{
-// 		for( var i = 0; i<dragList1.length;i++ )
-// 		{
-// 			if (id == dragList1[i]) 
-// 			{
-// 			        	price = dragList2[i];
-// 			        	break;
-// 			}
-// 		}
-// 		deleteProduct( orderList[orderPoint-1], price);
-// 	}
-// 	else
-// 	{
-
-// 	}
-	
-// }
-
-// function redo()
-// {
-
-// }

@@ -7,8 +7,8 @@
 
 $(document).ready(function() 
 {
- 
-    
+    var username = sessionStorage.getItem("user");
+    var pwd = sessionStorage.getItem("pwd");
 
     var price
     $.ajax({
@@ -33,27 +33,19 @@ $(document).ready(function()
                     pri = result.payload[i].pub_price;
                     idd = result.payload[i].beer_id;
  
-                    // addProduct(nam, pri);
                     makeList( nam, pri, idd );
-                    // addProduct(result.payload[i].namn,5);
-                    // var beer2 = new beer(2231, 5); 
-                    // var beer2 = {id:111, price:22};
-                    // itemList.push(nam)
-                    //onclick="addProduct(id, 5)"    onclick="deleteProduct(beerList[0], 5)"
-                    // alert( nam);
 
                 $('#lager').append(
                     '<tr><td class="name">' + result.payload[i].namn +
                     '</td><td><button class = "add" onclick= "addProduct('+
                     result.payload[i].beer_id + ', ' + result.payload[i].pub_price + ', 0)" >'+
-                    "+"+'</button><button class = "remove" onclick= "deleteProduct('+
+                    result.payload[i].beer_id+'</button><button class = "remove" onclick= "deleteProduct('+
                     result.payload[i].beer_id + ', ' + result.payload[i].pub_price + ', 0)" >'+"-"+
                     '</button></td><td class="price">' + result.payload[i].pub_price + " kr"+
                     '</td><td class="count">' + result.payload[i].count +
                     '</td><td class ="id" style ="display:none">' + result.payload[i].beer_id +
 
                     '</td></tr>')
-    
                 }
 
             }
@@ -66,6 +58,37 @@ $(document).ready(function()
             alert('error loading')
         }
     });
+
+    $('#buybutton').click(function () 
+        {
+            for( var i = 0; i<beerList.length;i++ )
+            {
+                var numVal = document.getElementById("cartcontent").rows[i+1].cells[1].innerHTML;
+                var numVal1 = Number(numVal);
+         
+                for(var j = 0; j<numVal1; j++)
+                {
+                    // alert(beerList[i]);
+                    // console.log(username);
+                    // alert(username);
+                    // alert(pwd);
+                    $.ajax({
+                        type: 'GET',
+                        url: 'http://pub.jamaica-inn.net/fpdb/api.php?username='+username+'&password='+pwd+'&action=purchases_append&beer_id='+beerList[i],
+                        dataType: "json",
+                        async: true,
+                        // alert('success')
+                        success: function () {
+                       // console.log('yea');
+                       //  alert('success');
+                        },
+                        error: function () {
+                            alert('error loading')
+                        }
+                    });
+                }
+            }
+        });
 
     $(".db_table").on('click', 'tr', function(e){
         e.preventDefault();
