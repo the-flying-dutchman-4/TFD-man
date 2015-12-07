@@ -77,7 +77,7 @@ $(document).ready(function()
             }
     });
 
-    $('#Buy').click(function () 
+    $('#buybutton').click(function () 
     {
             for( var i = 0; i<beerList.length;i++ )
             {
