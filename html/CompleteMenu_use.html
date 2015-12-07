@@ -16,33 +16,34 @@
             </div>
             <nav>
                 <ul>
-                    <li><a  href="CustomerMain_use.html">Home</a></li>
-                    <li><a class="active" href="CompleteMenu_use.html">Menu</a></li>
-                    <li><a href="#news">News</a></li>
-                    <input type ="text" name="Search" placeholder="Search">
+
+                    <li><a  href="CustomerMain_use.html" id="home">Home</a></li>
+                    <li><a class="active" href="CompleteMenu_use.html" id="menu">Menu</a></li>
+                    <li><a href="#news" id="news" >News</a></li>
                     <ul style="float:right;list-style-type:none;">
-                        <li><a href="login.html">Log out</a></li>
+                        <li><a href="login.html" id="logout">Log out</a></li>
+
                     </ul>
                 </ul>
             </nav>
             <div class="oneofthree" id="allergies_box">
-                <h4 name ="allergies">Allergies</h4>
+                <h4 id ="allergies">Allergies</h4>
                 <form >
-                    <input type="checkbox" name="Allergies gluten" value="gluten">Gluten intolerance<br>
-                    <input type="checkbox" name="Allergies lactose" value="lactose">Lactose intolerance<br>
-                    <input type="checkbox" name="Allergies nut" value="nut">Nut allergy<br>
+                    <input type="checkbox" id="Allergies_gluten" value="gluten">Gluten intolerance<br>
+                    <input type="checkbox" id="Allergies_lactose" value="lactose">Lactose intolerance<br>
+                    <input type="checkbox" id="Allergies_nut" value="nut">Nut allergy<br>
                 </form>
             </div>
             <div class="oneofthree" id="menu_box">
-                <h4 name="Beer list" >Complete Beer List</h4>
+                <h4 id="Beer list" >Complete Beer List</h4>
                 <div class = "db_table" id ="dbTable">
                     <table style = "width: 100%" id ="lager" border="1">
                         <tbody>
                         <tr>
-                            <th name="Name of Beer">Name</th>
+                            <th id="id of Beer">id</th>
                             <th>+/-</th>
-                            <th name="Price">Price</th>
-                            <th name="in stock">in stock</th>
+                            <th id="Price_">Price</th>
+                            <th id="in_stock" >In stock</th>
                             <!--<td>ID</td>-->
                         </tr>
                         </tbody>
@@ -51,26 +52,27 @@
             </div>
             <div class="oneofthree" id="cart_box">
                 <div class="cart">
-                <h2 name="User" >User Info</h2>
+                <h2 id="user" >User info</h2>
                     <table id="Infocontent" style="width:300px;height:auto;" border="1">
                         <tr>
-                            <th width=200>Name</th>
-                            <th width=100>Credits</th>
+                            <th width=200 id="id">Name:</th>
+                            <th width=100 id="credits_left">Credits</th>
                         </tr>
                     </table>
-                    <h2 name="shopping cart" >Shopping Cart</h2>
+                    <h2 id="shopping_cart" >Shopping Cart</h2>
                     <table id="cartcontent" style="width:300px;height:auto;" border="1">
                         <thead>
                             <tr>
-                                <th field="name" width=140>Name</th>
-                                <th field="quantity" width=60 align="right" name="Quantity">Quantity</th>
-                                <th field="price" width=60 align="right" name="price">Price</th>
+                                <th field="id" width=140 id="beerid">id</th>
+                                <th field="quantity" width=60 align="right" id="Quantity">Quantity</th>
+                                <th field="price" width=60 align="right" id="Price_">Price</th>
                             </tr>
                         </thead>
                     </table>
-                    <p id="totalPrice" class="total" name="total price">Total Price:0</p>
-                    <button class = "buy" onclick="buy" name="Buy" id="buybutton">Buy</button>
-                    <p id="newcredits"></p>
+
+                    <p class="total" id="total_price">Total Price</p>
+                    <button class = "buy" onclick="buy" id="Buy">Buy</button>
+
                 </div>
             </div>
             <div id="langdiv">

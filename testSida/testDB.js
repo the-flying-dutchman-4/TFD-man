@@ -3,6 +3,7 @@
    var nam;
    var pri;
    var idd;
+   var credits;
 
 
 $(document).ready(function() 
@@ -20,9 +21,9 @@ $(document).ready(function()
         {
             var data1 = sessionStorage.getItem("first_name");
             var data2 = sessionStorage.getItem("last_name");
-            var data3 = sessionStorage.getItem("assets");
+            credits = sessionStorage.getItem("assets");
             $('#Infocontent').append(
-                '<tr><td>'+data1+" "+data2+'</td><td>'+data3+'</td></tr>'
+                '<tr><td>'+data1+" "+data2+'</td><td>'+credits+'</td></tr>'
                 );
 
             for (var i = 0; result.payload.length; i++) 
@@ -59,7 +60,7 @@ $(document).ready(function()
         }
     });
 
-    $('#buybutton').click(function () 
+    $('#Buy').click(function () 
         {
             for( var i = 0; i<beerList.length;i++ )
             {
@@ -70,7 +71,7 @@ $(document).ready(function()
                 {
                     // alert(beerList[i]);
                     // console.log(username);
-                    // alert(username);
+                    alert(username);
                     // alert(pwd);
                     $.ajax({
                         type: 'GET',
@@ -88,7 +89,21 @@ $(document).ready(function()
                     });
                 }
             }
+
+
+        $.ajax({
+            type: 'GET',
+            url: 'http://pub.jamaica-inn.net/fpdb/api.php?username='+username+'&password='+pwd+'&action=iou_get',
+            dataType: "json",
+            async: true,
+            success: function(result){
+
+            }
+
+
+
         });
+        }
 
     $(".db_table").on('click', 'tr', function(e){
         e.preventDefault();

@@ -1,9 +1,15 @@
 var beerList = new Array(0);
 var total = 0;
+var tempID;
+var tempPrice;
+var tempName;
 
 var nameList = new Array(0);
 var priceList = new Array(0);
 var idList = new Array(0);
+var actionListID =new Array(0);
+var actionListPrice = new Array(0);
+var actionListName = new Array(0);
 
 var dragList1 = ["Black Tower", "Brooklyn", "Chilcas", "Dr L", "Hoegaarden", "Paulaner"];
 var dragList2 = [35, 25, 50, 85, 20, 25];
@@ -24,6 +30,7 @@ function addProduct(id, price, dragOn)
 	var flag = 0;
 	var index = 0;
 	var name;
+	// alert("hej");
 	// var order1 = new Order('add', id, price); 
 	// var realId;
 	// alert(typeof name);
@@ -77,11 +84,17 @@ function addProduct(id, price, dragOn)
 	 	
 	    	cell2.innerHTML = 1;
 	    	cell3.innerHTML = price;
-	    	beerList.push(id);
+	    	beerList.push(id);	
+	   actionListName.push(name);
+	actionListID.push(id);
+	actionListPrice.push(price);
+
 	}
-				
+	alert("hej");
+
 	total+=Number(price);
-	document.getElementById("totalPrice").innerHTML="Total: $"+total;
+
+	document.getElementById("total_price").innerHTML="Total: "+total+"kr";
 	// alert(typeof beerList[beerList.length-1]);
 }
 
@@ -104,7 +117,7 @@ function deleteProduct(id, price)
 			document.getElementById("cartcontent").rows[beerList.length-i].cells[1].innerHTML = numVal1;
 		          	document.getElementById("cartcontent").rows[beerList.length-i].cells[2].innerHTML = priceVal1;
 				total-=Number(price);
-			document.getElementById("totalPrice").innerHTML="Total: $"+total;
+			document.getElementById("total_price").innerHTML="Total: "+total+"kr";
 				break;
 			}
 			else
@@ -112,7 +125,7 @@ function deleteProduct(id, price)
           				document.getElementById("cartcontent").deleteRow(beerList.length-i);
           				beerList.splice(i, 1);
           				total-=Number(price);
-				document.getElementById("totalPrice").innerHTML="Total: $"+total;
+				document.getElementById("total_price").innerHTML="Total: "+total+"kr";
           				break;
 			}
 		}
@@ -154,4 +167,26 @@ function makeList(name, price, id )
 	idList.push(id);
 	// alert(name);
 }
+
+
+ function undo()
+ {
+ 	// var price;
+ 	if( actionList.length >0 )
+ 	{
+ 		tempID = actionListID[-1];
+ 		tempPrice = actionListPrice[-1];
+ 		deleteProduct(actionListID[-1], actionListPrice[-1]);
+ 	}
+	
+ }
+
+ function redo()
+ {
+	 if(actionList.length >0){
+		 addProduct(actionListID[-1],actionListPrice[-1],1);
+
+	 }
+
+ }
 
