@@ -338,10 +338,19 @@
 
     <translation id="a[name='name']">
         <english>
-            Name
+            Name:
         </english>
         <swedish>
-            Namn
+            Namn:
+        </swedish>
+    </translation>
+
+    <translation id="a[name='menu']">
+        <english>
+            Menu
+        </english>
+        <swedish>
+            Meny
         </swedish>
     </translation>
 </translations>
