@@ -208,11 +208,7 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
     <translation id="[id='Price_']">
-=======
-    <translation id="[id='Price']">
->>>>>>> origin/master
         <english>
             Price
         </english>
@@ -221,11 +217,7 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
     <translation id="[id='in_stock']">
-=======
-    <translation id="[id='in stock']">
->>>>>>> origin/master
         <english>
             In stock
         </english>
@@ -233,9 +225,6 @@
             I lager
         </swedish>
     </translation>
-
-<<<<<<< HEAD
-=======
 
     <translation id="[id='in stock']">
         <english>
@@ -246,7 +235,7 @@
         </swedish>
     </translation>
 
->>>>>>> origin/master
+
     <translation id="[id='user']">
         <english>
             User info
@@ -256,11 +245,8 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
+
     <translation id="[id='credits_left']">
-=======
-    <translation id="[id='credits left']">
->>>>>>> origin/master
         <english>
             Credits:
         </english>
@@ -269,12 +255,7 @@
         </swedish>
     </translation>
 
-
-<<<<<<< HEAD
     <translation id="[id='shopping_cart']">
-=======
-    <translation id="[id='shopping cart']">
->>>>>>> origin/master
         <english>
             Shopping Cart
         </english>
@@ -283,11 +264,7 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
     <translation id="[id='total_price']">
-=======
-    <translation id="[id='total price']">
->>>>>>> origin/master
         <english>
             Total Price:
         </english>
@@ -296,11 +273,8 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
+
     <translation id="[id='Buy']">
-=======
-    <translation id="[id='buy']">
->>>>>>> origin/master
         <english>
             Buy
         </english>
@@ -318,11 +292,7 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
     <translation id="[id='Quick_Order']">
-=======
-    <translation id="[id='Quick Order']">
->>>>>>> origin/master
         <english>
             Quick order of Popular Beers
         </english>
@@ -331,11 +301,7 @@
         </swedish>
     </translation>
 
-<<<<<<< HEAD
     <translation id="[id='Price_']">
-=======
-    <translation id="[id='price']">
->>>>>>> origin/master
         <english>
             Price
         </english>
