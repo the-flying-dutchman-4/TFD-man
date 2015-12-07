@@ -18,6 +18,7 @@ $(document).ready(function()
         async: true,
         success: function (result) 
         {
+            console.log("loading...")
             var data1 = sessionStorage.getItem("first_name");
             var data2 = sessionStorage.getItem("last_name");
             var data3 = sessionStorage.getItem("assets");
