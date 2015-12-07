@@ -19,10 +19,11 @@ $(document).ready(function()
         async: true,
         success: function (result) 
         {
-            console.log("loading...")
+            // console.log("loading...")
             var data1 = sessionStorage.getItem("first_name");
             var data2 = sessionStorage.getItem("last_name");
             credits = sessionStorage.getItem("assets");
+
             $('#Infocontent').append(
                 '<tr><td>'+data1+" "+data2+'</td><td>'+credits+'</td></tr>'
                 );
@@ -41,7 +42,7 @@ $(document).ready(function()
                     '<tr><td class="name">' + result.payload[i].namn +
                     '</td><td><button class = "add" onclick= "addProduct('+
                     result.payload[i].beer_id + ', ' + result.payload[i].pub_price + ', 0)" >'+
-                    result.payload[i].beer_id+'</button><button class = "remove" onclick= "deleteProduct('+
+                    "+"+'</button><button class = "remove" onclick= "deleteProduct('+
                     result.payload[i].beer_id + ', ' + result.payload[i].pub_price + ', 0)" >'+"-"+
                     '</button></td><td class="price">' + result.payload[i].pub_price + " kr"+
                     '</td><td class="count">' + result.payload[i].count +
@@ -52,37 +53,58 @@ $(document).ready(function()
 
             }
 
-            // 
-
-
         },
         error: function () {
             alert('error loading')
         }
     });
 
-    $('#Buy').click(function () 
+    $.ajax({
+        type: 'GET',
+        url: 'http://pub.jamaica-inn.net/fpdb/api.php?username='+username+'&password='+pwd+'&action=iou_get',
+        dataType: "json",
+        async: true,
+        success: function(result)
         {
+          
+            credits = result.payload[0].assets;
+            document.getElementById("Infocontent").rows[1].cells[1].innerHTML = credits;
+            sessionStorage.setItem("assets", credits)
+        },
+        error: function () 
+        {
+                alert('error loading new credits')
+            }
+    });
+
+    $('#Buy').click(function () 
+    {
             for( var i = 0; i<beerList.length;i++ )
             {
                 var numVal = document.getElementById("cartcontent").rows[i+1].cells[1].innerHTML;
                 var numVal1 = Number(numVal);
-         
+                if(typeof beerList[i] == "string")
+                {
+                     for( var j = 0; j<nameList.length;j++ )
+                    {
+                        if (beerList[i] == nameList[j]) 
+                        {
+                                  beerList[i] = idList[j];
+                                  break;
+                        }
+                    }
+                }
+
                 for(var j = 0; j<numVal1; j++)
                 {
-                    // alert(beerList[i]);
-                    // console.log(username);
-                    alert(username);
-                    // alert(pwd);
+                   
                     $.ajax({
                         type: 'GET',
                         url: 'http://pub.jamaica-inn.net/fpdb/api.php?username='+username+'&password='+pwd+'&action=purchases_append&beer_id='+beerList[i],
                         dataType: "json",
                         async: true,
-                        // alert('success')
                         success: function () {
-                       // console.log('yea');
-                       //  alert('success');
+                       //  
                         },
                         error: function () {
                             alert('error loading')
@@ -97,14 +119,21 @@ $(document).ready(function()
             url: 'http://pub.jamaica-inn.net/fpdb/api.php?username='+username+'&password='+pwd+'&action=iou_get',
             dataType: "json",
             async: true,
-            success: function(result){
-
-            }
-
-
-
+            success: function(result)
+            {
+              
+                credits = result.payload[0].assets;
+                document.getElementById("Infocontent").rows[1].cells[1].innerHTML = credits;
+                sessionStorage.setItem("assets", credits)
+            },
+            error: function () 
+            {
+                    alert('error loading new credits')
+                }
         });
-        }
+
+        alert('Thank you for the purchases!');
+    });
 
     $(".db_table").on('click', 'tr', function(e){
         e.preventDefault();
