@@ -1,18 +1,20 @@
-var beerList = new Array(0);
-var total = 0;
-var tempID = new Array(0);
+var beerList = new Array(0);		// Record all the beers in the cart but not include the quantity
+var total = 0;					// Total value of the cart content
+var tempID = new Array(0);			
 var tempPrice = new Array(0);
 var tempName;
 
-var nameList = new Array(0);
-var priceList = new Array(0);
-var idList = new Array(0);
+var nameList = new Array(0);		// Record all the beer names from the complete menu list
+var priceList = new Array(0);		// Record all the beer prices from the complete menu list
+var idList = new Array(0);			// Record all the beer_id from the complete menu list
 var actionListID =new Array(0);
 var actionListPrice = new Array(0);
 var actionListName = new Array(0);
 
 var dragList1 = ["Black Tower", "Brooklyn", "Chilcas", "Dr L", "Hoegaarden", "Paulaner"];
+// For drag-drop, instead of beer_id, we use addProduct( String_name, price)
 var dragList2 = [35, 25, 50, 85, 20, 25];
+// For drag-drop, it is the price list of addProduct( String_name, price)
 
 // var orderList = new Array(0);
 // var orderPoint = 0;
@@ -25,9 +27,9 @@ var dragList2 = [35, 25, 50, 85, 20, 25];
 // 	this.price = price;
 // }
 
-function addProduct(id, price, dragOn) 
-{
-	var flag = 0;
+function addProduct(id, price, dragOn) 			// id -- Sting_name(drag-drop) / beer_id(menu list)
+{								// price -- particular price
+	var flag = 0;						// dragOn -- used in drag-drop(1) / menu list(0)
 	var index = 0;
 	var name;
 	// alert("hej");
@@ -40,9 +42,9 @@ function addProduct(id, price, dragOn)
 	{
 		if (id == beerList[i]) 
 		{
-		          	flag=1;
-		 	index = i;
-		}
+		          	flag=1;				// flag = 1 -- the beer has already in the cart, just  increment
+		 	index = i;				// quantity, not add a new row
+		}						// index -- Record where the beer is in the beerList
 	}
 
 	if(flag == 1)
