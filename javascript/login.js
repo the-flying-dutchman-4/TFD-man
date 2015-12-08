@@ -9,6 +9,7 @@ $(document).ready(function(){
         username= $('#user').val();
         pwd = $('#pw').val();
         console.log(username,pwd)
+        $("#loading").fadeIn();
         $.ajax({
             type: 'GET',
             url: 'http://pub.jamaica-inn.net/fpdb/api.php?username='+username+'&password='+pwd+'&action=iou_get',
