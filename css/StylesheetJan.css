@@ -34,7 +34,7 @@ img {
 /* från school */
 
 nav ul {
-
+    height: 55px;
     border-radius: 10px;
     font-weight: bold;
     list-style-type: none;
@@ -126,7 +126,7 @@ h4 {
     width:34%
 }
 #cart_box2{
-    width:31%
+    width:32%
 }
 #menu_box2{
     width:65%
@@ -277,5 +277,17 @@ th{
 .button_class:hover{
     background-color: rgba(142, 203, 146, 0.5); }
 #buyButton{
-    width: 300px;
+    width: 280px;
+}
+#Undo{
+  width: 137px;
+    height: 40px;
+}
+#Redo{
+    width:137px;
+    height: 40px;
+}
+.flag_a{
+    padding:0;
+    margin: 0px 10px 0px 0px;
 }
