@@ -261,3 +261,11 @@ th{
 #buyButton{
     width: 300px;
 }
+#Undo{
+  width: 107px;
+    height: 40px;
+}
+#Redo{
+    width:107px;
+    height: 40px;
+}
