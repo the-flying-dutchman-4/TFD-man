@@ -11,10 +11,10 @@
 
     <translation id="[id='news']">
         <english>
-            News
+            Info
         </english>
         <swedish>
-            Nyheter
+            Info
         </swedish>
     </translation>
 
@@ -363,4 +363,14 @@
             Öl ID
         </swedish>
     </translation>
+
+    <translation id="[id='info_header']">
+        <english>
+            Information About The Flying Dutchman
+        </english>
+        <swedish>
+            Information om The FLying Dutchman
+        </swedish>
+    </translation>
+
 </translations>

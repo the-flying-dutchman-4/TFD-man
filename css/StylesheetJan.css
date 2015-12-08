@@ -118,9 +118,10 @@ h4 {
     width: 96%;
     height: 60%;
     table-layout: fixed;
-    overflow: auto;
 }
-
+#info_{
+    white-space: normal;
+}
 #cart_box{
     width:34%
 }
