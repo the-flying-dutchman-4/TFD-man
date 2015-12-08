@@ -7,6 +7,9 @@
         <swedish>
             Hem
         </swedish>
+	<chinese>
+	   主页
+	</chinese>
     </translation>
 
     <translation id="[id='news']">
@@ -16,6 +19,9 @@
         <swedish>
             Info
         </swedish>
+	<chinese>
+	   关于我们
+	</chinese>
     </translation>
 
     <translation id="[id='Öl']">
@@ -25,6 +31,9 @@
         <swedish>
             Öl
         </swedish>
+	<chinese>
+	   酒类
+	</chinese>
     </translation>
 
     <translation id="[id='Ljus']">
@@ -34,6 +43,9 @@
         <swedish>
             Ljus lager
         </swedish>
+	<chinese>
+	   清啤
+	</chinese>
     </translation>
 
     <translation id="[id='Mörk']">
@@ -43,6 +55,9 @@
         <swedish>
             Mörk lager
         </swedish>
+	<chinese>
+	   黑啤
+	</chinese>
     </translation>
 
     <translation id="[id='Porter']">
@@ -52,6 +67,9 @@
         <swedish>
             Porter och Stout
         </swedish>
+	<chinese>
+	   波特和斯陶特
+	</chinese>
     </translation>
 
     <translation id="[id='Special']">
@@ -61,6 +79,9 @@
         <swedish>
             Specialöl
         </swedish>
+	<chinese>
+	   特别种类
+	</chinese>
     </translation>
 
     <translation id="[id='Veteöl']">
@@ -70,6 +91,9 @@
         <swedish>
             Veteöl
         </swedish>
+	<chinese>
+	   小麦啤酒
+	</chinese>
     </translation>
 
     <translation id="[id='Vin']">
@@ -79,6 +103,9 @@
         <swedish>
             Vin
         </swedish>
+	<chinese>
+	   葡萄酒
+	</chinese>
     </translation>
 
     <translation id="[id='Rött']">
@@ -88,6 +115,9 @@
         <swedish>
             Rött vin
         </swedish>
+	<chinese>
+	   红酒
+	</chinese>
     </translation>
 
     <translation id="[id='Vitt']">
@@ -97,6 +127,9 @@
         <swedish>
             Vitt vin
         </swedish>
+	<chinese>
+	   白葡萄酒
+	</chinese>
     </translation>
 
     <translation id="[id='Alkoholfritt']">
@@ -106,6 +139,9 @@
         <swedish>
             Alkoholfritt
         </swedish>
+	<chinese>
+	   无酒精饮料
+	</chinese>
     </translation>
 
     <translation id="[id='Other']">
@@ -115,6 +151,9 @@
         <swedish>
             Annat
         </swedish>
+	<chinese>
+	   其它
+	</chinese>
     </translation>
 
     <translation id="[id='Dryck']">
@@ -124,6 +163,9 @@
         <swedish>
             Dryck
         </swedish>
+	<chinese>
+	   饮料
+	</chinese>
     </translation>
 
     <translation id="[id='Stock']">
@@ -133,6 +175,9 @@
         <swedish>
             Storage
         </swedish>
+	<chinese>
+	   库存
+	</chinese>
     </translation>
 
 
@@ -143,6 +188,9 @@
         <swedish>
             Användare:
         </swedish>
+	<chinese>
+	   用户:
+	</chinese>
     </translation>
 
     <translation id="[id='logout']">
@@ -152,6 +200,9 @@
         <swedish>
             Logga ut
         </swedish>
+	<chinese>
+	   退出
+	</chinese>
     </translation>
 
     <translation id="[id='allergies']">
@@ -159,8 +210,11 @@
             Allergies
         </english>
         <swedish>
-            Allergier
+            Allerigier
         </swedish>
+	<chinese>
+	   不良反应
+	</chinese>
     </translation>
 
     <translation id="[id='Allergies_gluten']">
@@ -170,6 +224,9 @@
         <swedish>
             Glutenintolerans
         </swedish>
+	<chinese>
+	   谷蛋白不耐受
+	</chinese>
     </translation>
 
     <translation id="[id='Allergies_lactose']">
@@ -179,6 +236,9 @@
         <swedish>
             Laktosintolerans
         </swedish>
+	<chinese>
+	   乳糖不耐受
+	</chinese>
     </translation>
 
     <translation id="[id='Allergies_nut']">
@@ -188,15 +248,21 @@
         <swedish>
             Nötallergi
         </swedish>
+	<chinese>
+	   坚果过敏
+	</chinese>
     </translation>
 
     <translation id="[id='Beer list']">
         <english>
-            Comlete Beer List
+            Complete Beer List
         </english>
         <swedish>
             Komplett Öllista
         </swedish>
+	<chinese>
+	   全部酒类列表
+	</chinese>
     </translation>
 
     <translation id="[id='id']">
@@ -206,6 +272,9 @@
         <swedish>
             Namn:
         </swedish>
+	<chinese>
+	   名称:
+	</chinese>
     </translation>
 
     <translation id="[id='Price_']">
@@ -215,6 +284,9 @@
         <swedish>
             Pris
         </swedish>
+	<chinese>
+	   价格
+	</chinese>
     </translation>
 
     <translation id="[id='in_stock']">
@@ -224,6 +296,9 @@
         <swedish>
             I lager
         </swedish>
+	<chinese>
+	   库存
+	</chinese>
     </translation>
 
     <translation id="[id='in stock']">
@@ -233,6 +308,9 @@
         <swedish>
             I lager
         </swedish>
+	<chinese>
+	   库存
+	</chinese>
     </translation>
 
 
@@ -243,6 +321,9 @@
         <swedish>
             Användarinformation
         </swedish>
+	<chinese>
+	   用户信息
+	</chinese>
     </translation>
 
 
@@ -253,6 +334,9 @@
         <swedish>
             Kredit:
         </swedish>
+	<chinese>
+	   积分:
+	</chinese>
     </translation>
 
     <translation id="[id='shopping_cart']">
@@ -262,6 +346,9 @@
         <swedish>
             Kundvagn
         </swedish>
+	<chinese>
+	   购物车
+	</chinese>
     </translation>
 
     <translation id="[id='total_price']">
@@ -271,6 +358,9 @@
         <swedish>
             Totalpris:
         </swedish>
+	<chinese>
+	   总价:
+	</chinese>
     </translation>
 
 
@@ -281,6 +371,9 @@
         <swedish>
             Köp
         </swedish>
+	<chinese>
+	   购买
+	</chinese>
     </translation>
 
     <translation id="[id='showing']">
@@ -290,6 +383,9 @@
         <swedish>
             Visar aktiv användares kredit
         </swedish>
+	<chinese>
+	   活跃用户积分
+	</chinese>
     </translation>
 
     <translation id="[id='Quick_Order']">
@@ -299,6 +395,9 @@
         <swedish>
             Snabb beställning av populära öler
         </swedish>
+	<chinese>
+	   精选系列
+	</chinese>
     </translation>
 
     <translation id="[id='Price_']">
@@ -308,6 +407,9 @@
         <swedish>
             Pris
         </swedish>
+	<chinese>
+	   价格
+	</chinese>
     </translation>
 
     <translation id="[id='Quantity']">
@@ -317,6 +419,9 @@
         <swedish>
             Antal
         </swedish>
+	<chinese>
+	   数量
+	</chinese>
     </translation>
 
     <translation id="[id='Undo']">
@@ -326,6 +431,9 @@
         <swedish>
             Ångra
         </swedish>
+	<chinese>
+	   后退
+	</chinese>
     </translation>
 
     <translation id="[id='Redo']">
@@ -335,6 +443,9 @@
         <swedish>
             Gör om
         </swedish>
+	<chinese>
+	   前进
+	</chinese>
     </translation>
 
     <translation id="[id='id']">
@@ -344,6 +455,9 @@
         <swedish>
             Namn:
         </swedish>
+	<chinese>
+	   用户ID:
+	</chinese>
     </translation>
 
     <translation id="[id='menu']">
@@ -353,6 +467,9 @@
         <swedish>
             Meny
         </swedish>
+	<chinese>
+	   酒单
+	</chinese>
     </translation>
 
     <translation id="[id='beeid']">
@@ -362,6 +479,9 @@
         <swedish>
             Öl ID
         </swedish>
+	<chinese>
+	   酒类 ID
+	</chinese>
     </translation>
 
     <translation id="[id='info_header']">
@@ -371,6 +491,9 @@
         <swedish>
             Information om The FLying Dutchman
         </swedish>
+	<chinese>
+	   关于我们
+	</chinese>
     </translation>
 
 </translations>
