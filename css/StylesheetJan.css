@@ -104,6 +104,23 @@ h4 {
     table-layout: fixed;
     overflow: auto;
 }
+
+.infobox {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FBBB63;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    display: inline-block;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    top: 22%;
+    width: 96%;
+    height: 60%;
+    table-layout: fixed;
+    overflow: auto;
+}
+
 #cart_box{
     width:34%
 }
