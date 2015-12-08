@@ -8,7 +8,10 @@ function setLanguage(inputLang) {
             success: function(xml) {
                 $(xml).find('translation').each(function(){
                     var id = $(this).attr('id');
-                    var text = "<p>" + $(this).find(language).text() + "</p>";
+                    var text =
+                        //"<p>" +
+                        $(this).find(language).text()
+                        //+ "</p>";
                     $("" + id).html(text);
                 });
             }
