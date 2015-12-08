@@ -273,6 +273,7 @@ th{
     padding: 1em;
     margin-bottom: 3%;
     border-radius: 1000px;
+    background-color: #9f9f9f;
     color: white; }
 .button_class:hover{
     background-color: rgba(142, 203, 146, 0.5); }

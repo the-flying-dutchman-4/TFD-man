@@ -111,6 +111,7 @@ $(document).ready(function()
                         }
                     });
                 }
+               
             }
 
 
@@ -132,7 +133,15 @@ $(document).ready(function()
                 }
         });
 
+        for( var i = beerList.length-1 ; i >= 0 ; i-- )
+        {
+            document.getElementById("cartcontent").deleteRow(i+1);
+            beerList.splice(i, 1);
+        }
+        document.getElementById("total_price").innerHTML="Total: ";
+
         alert('Thank you for the purchases!');
+        // alert(beerList[0]);
     });
 
     $(".db_table").on('click', 'tr', function(e){
