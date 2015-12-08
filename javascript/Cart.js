@@ -189,13 +189,13 @@ console.log(actionListID.length)
 	
  }
 
- function redo()
+ function redo(n)
  {
 	 console.log("redo pressed");
 
 	 if(tempID.length >0){
 
-		 addProduct(tempID[0],tempPrice[0] , 1);
+		 addProduct(tempID[0],tempPrice[0] , n);
 		 tempID.splice(0,1);
 		 tempPrice.splice(0,1);
 
