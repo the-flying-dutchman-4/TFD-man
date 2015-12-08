@@ -20,7 +20,7 @@ img {
 
 .container {
     z-index: 1;
-    margin: 0 auto 0 auto;
+    margin: 10px auto 0 auto;
     width: 1000px;
     height: 735px;
     position: absolute;
